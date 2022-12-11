@@ -10,6 +10,10 @@
     padding-right: 5rem;
     font-size: 2rem;
 } */
+/* body{
+    background-color: black;
+    color: white;
+} */
 
 .heading{
     font-size: 1.5rem;
@@ -94,7 +98,7 @@
 }
 
 .project-thumbnail{
-    width: 75%;
+    width: 65%;
 }
 
 @media only screen and (max-width: 1000px){
@@ -119,5 +123,21 @@
 
 .shown{
     display: block;
+}
+
+/* .gallery{
+    padding: 100px;
+} */
+
+.gallery-image{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media only screen and (max-width: 1000px){
+    .gallery-image{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }
 

@@ -9,6 +9,46 @@ document.addEventListener('DOMContentLoaded', function(){
         hide_details('hide-1');
     })
 
+    let show2 = document.querySelector("#show-2")
+    show2.addEventListener('click', function() {
+        show_details('show-2');
+    })
+
+    let hide2 = document.querySelector("#hide-2")
+    hide2.addEventListener('click', function() {
+        hide_details('hide-2');
+    })
+
+    let show3 = document.querySelector("#show-3")
+    show3.addEventListener('click', function() {
+        show_details('show-3');
+    })
+
+    let hide3 = document.querySelector("#hide-3")
+    hide3.addEventListener('click', function() {
+        hide_details('hide-3');
+    })
+    
+    let show4 = document.querySelector("#show-4")
+    show4.addEventListener('click', function() {
+        show_details('show-4');
+    })
+
+    let hide4 = document.querySelector("#hide-4")
+    hide4.addEventListener('click', function() {
+        hide_details('hide-4');
+    })
+
+    let show5 = document.querySelector("#show-5")
+    show5.addEventListener('click', function() {
+        show_details('show-5');
+    })
+
+    let hide5 = document.querySelector("#hide-5")
+    hide5.addEventListener('click', function() {
+        hide_details('hide-5');
+    })
+
 
 
     // let elem2 = document.querySelector("#show-2")
