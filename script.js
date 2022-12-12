@@ -49,8 +49,6 @@ document.addEventListener('DOMContentLoaded', function(){
         hide_details('hide-5');
     })
 
-
-
     // let elem2 = document.querySelector("#show-2")
     // elem2.addEventListener('click', function() {
     //     show_details('show-2');
