@@ -10,15 +10,13 @@
     padding-right: 5rem;
     font-size: 2rem;
 } */
-/* body{
-    background-color: black;
-    color: white;
-} */
+.font{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .heading{
     font-size: 20px;
     font-weight: 500;
-    /* background-color: rgba(156, 147, 85, 0.439); */
     background-color: #323437;
     color: white;
     padding-top: 2%;
@@ -27,9 +25,24 @@
     padding-right: 2%;
 }
 
+@media only screen and (max-width: 800px){
+    .smol-header-font{
+        font-size: 30px;
+    }
+}
 @media only screen and (max-width: 1000px){
     .heading{
         font-size: 18px;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .heading{
+        font-size: 14px;
         padding-top: 4%;
         padding-bottom: 4%;
         padding-left: 4%;
@@ -77,10 +90,24 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+@media only screen and (max-width: 800px){
+    .about{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
 .skills{
     text-align: center;
     margin-left: 7%;
     margin-right: 7%;
+}
+
+@media only screen and (max-width: 1000px){
+    .skills{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 .skills-row{
@@ -88,8 +115,8 @@
     padding-right: 15%;
     display: flex;
     flex-wrap: wrap;
-
 }
+
 .skills-section{
     border-radius: 1rem;
     text-align: center;
