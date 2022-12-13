@@ -245,4 +245,14 @@
     display: inline;
 }
 
+.right{
+    text-align: right;
+}
+
+/* @media only screen and (max-width: 1000px){
+    .space-lol{
+        display: none;
+    }
+} */
+
 
