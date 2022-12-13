@@ -67,6 +67,7 @@ function show_details(elem){
 
     document.getElementById(show_parent).classList.remove('shown');
     document.getElementById(show_parent).classList.add('hidden');
+    document.getElementById(show_parent).classList.remove('details-btns');
     document.getElementById(hide_parent).classList.remove('hidden');
     document.getElementById(hide_parent).classList.add('shown');
 
@@ -83,6 +84,7 @@ function hide_details(elem){
     let hide_parent = elem + '-parent';
 
     document.getElementById(show_parent).classList.add('shown');
+    document.getElementById(show_parent).classList.add('details-btns');
     document.getElementById(show_parent).classList.remove('hidden');
     document.getElementById(hide_parent).classList.add('hidden');
     document.getElementById(hide_parent).classList.remove('shown');

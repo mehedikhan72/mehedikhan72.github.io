@@ -40,9 +40,10 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 400px){
     .heading{
-        font-size: 14px;
+        font-size: 13px;
         padding-top: 4%;
         padding-bottom: 4%;
         padding-left: 4%;
@@ -93,8 +94,8 @@
 
 @media only screen and (max-width: 800px){
     .about{
-        margin-top: 5%;
-        margin-bottom: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 }
 .skills{
@@ -105,8 +106,8 @@
 
 @media only screen and (max-width: 1000px){
     .skills{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -123,9 +124,19 @@
     /* background-color: rgba(156, 147, 85, 0.439); */
     background-color: #323437;
     color: white;
-    padding: 3rem;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 7%;
+    padding-right: 7%;
     flex: 1;
-    margin: 1rem;
+    margin: 3%;
+}
+
+@media only screen and (max-width: 800px){
+    .skills-section{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .projects{
@@ -228,6 +239,10 @@
 
 .white-link:hover{
     color: white;
+}
+
+.details-btns{
+    display: inline;
 }
 
 
