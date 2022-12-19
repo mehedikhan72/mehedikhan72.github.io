@@ -21,13 +21,15 @@
     color: white;
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
+}
+
+.smol-header-font{
+    font-size: 65px;
 }
 
 @media only screen and (max-width: 800px){
     .smol-header-font{
-        font-size: 30px;
+        font-size: 45px;
     }
 }
 @media only screen and (max-width: 1000px){
@@ -53,7 +55,6 @@
 
 .info{
     padding: 1rem;
-    text-align: center;
     margin: auto;
     position: absolute;
     left:0;
@@ -67,6 +68,7 @@
 }
 
 .intro{
+    text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
     height:fit-content;
@@ -126,8 +128,8 @@
     color: white;
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
     flex: 1;
     margin: 3%;
 }
@@ -255,4 +257,13 @@
     }
 } */
 
+.bg-light{
+    background-color: black;
+    color: black;
+}
+
+/* .navbar{
+    background-color: black;
+    color: black;
+} */
 
