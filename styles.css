@@ -1,7 +1,7 @@
-/* .dark-mode{
-    color: white;
-    background-color: rgb(29, 29, 29);
-} */
+.dark-mode{
+    color: #D1D0C5;
+    background-color: #323437;
+}
 
 /* .body{
     padding-top: 2rem;
@@ -86,8 +86,8 @@
 .about{
     text-align: center;
     /* background-color: rgba(156, 147, 85, 0.439); */
-    background-color: #323437;
-    color: white;
+    background-color: #e2b714;
+    color: black;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;
@@ -124,8 +124,8 @@
     border-radius: 1rem;
     text-align: center;
     /* background-color: rgba(156, 147, 85, 0.439); */
-    background-color: #323437;
-    color: white;
+    background-color: #e2b714;
+    color: black;
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 5%;
@@ -207,7 +207,11 @@
 
 
 .fab{
-    color: white;
+    color: black;
+}
+
+.fab:hover{
+    filter: invert(100%);
 }
 
 .contact{
@@ -225,8 +229,8 @@
 .footer{
     text-align: center;
     /* background-color: rgba(156, 147, 85, 0.439); */
-    background-color: #323437;
-    color: white;
+    background-color: #e2b714;
+    color: black;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;

@@ -29,15 +29,15 @@ document.addEventListener('DOMContentLoaded', function(){
         hide_details('hide-3');
     })
     
-    let show4 = document.querySelector("#show-4")
-    show4.addEventListener('click', function() {
-        show_details('show-4');
-    })
+    // let show4 = document.querySelector("#show-4")
+    // show4.addEventListener('click', function() {
+    //     show_details('show-4');
+    // })
 
-    let hide4 = document.querySelector("#hide-4")
-    hide4.addEventListener('click', function() {
-        hide_details('hide-4');
-    })
+    // let hide4 = document.querySelector("#hide-4")
+    // hide4.addEventListener('click', function() {
+    //     hide_details('hide-4');
+    // })
 
     let show5 = document.querySelector("#show-5")
     show5.addEventListener('click', function() {
