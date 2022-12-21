@@ -63,24 +63,23 @@
     bottom: 0;
 }
 
-.pic1{
+/* .pic1{
     text-align: center;
-}
+} */
 
 .intro{
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
     height:fit-content;
     margin-left: 2%;
     margin-right: 2%;
 }
 
 .intro-img{
-    height: 60%;
-    width: 60%;
-    border-radius: 50%;
-    justify-content: center;
+    width: 100%;
+    /* border-radius: 50%; */
+    /* justify-content: center; */
 }
 
 .about{
