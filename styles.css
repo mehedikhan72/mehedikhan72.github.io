@@ -107,8 +107,8 @@
 
 @media only screen and (max-width: 1000px){
     .skills{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
 
