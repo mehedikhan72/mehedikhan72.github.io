@@ -6,7 +6,7 @@ function About(props) {
             <p className='text-3 text-center p-2'>Hey, Thank you for showing interest!</p>
 
             <p className='text-2 text-center p-2'>I'm an experienced full stack engineer with a demonstrated history of creating software solutions for
-                businesses and the problems you see around yourself. Besides, I'm pursuing my bachelor's degree in Computer Science and Engineering from
+                businesses and the problems you see around. Besides, I'm pursuing my bachelor's degree in Computer Science and Engineering from
                 Bangladesh University of Engineering and Technology(BUET).
             </p>
             <p className='text-2 text-center p-2'>
