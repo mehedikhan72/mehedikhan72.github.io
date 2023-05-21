@@ -69,12 +69,12 @@ export default function TravelMedia() {
                     Being my first DRF and React project, this was by far the most challenging project I have ever worked on.
                 </p>
                 <p className='text-2 pb-5'>
-                    Implementing realtime notifications, Google and social medio authentication were huge challenges for me
+                    Implementing realtime notifications, Google and social media authentication were huge challenges for me
                     and I was able to successfully implement them in my app. It has most of the modern social media features.
                 </p>
                 <p className='text-2 pb-5'>
                     Learned using react properly and applied many industry practices. Learned how websockets work and how to use Django
-                    channels to implement them.
+                    channels to implement them. Learned using tokens for authentication and authorization and many more.
                 </p>
 
                 <div className='flex justify-center items-center'>
