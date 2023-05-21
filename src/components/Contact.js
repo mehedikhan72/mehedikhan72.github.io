@@ -9,7 +9,6 @@ function Contact(props) {
                 <p className='text-3 text-center px-2'>Please email me at</p>
                 <a href='mailto:lopingcard@gmail.com' className='text-4 text-center hover:text-indigo-500 hover:underline'>lopingcard@gmail.com</a>
             </div>
-
         </div>
     )
 }

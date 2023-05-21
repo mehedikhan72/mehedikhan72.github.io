@@ -62,7 +62,7 @@ export default function ClothingStore() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Used</p>
-                <p className='text-2 pb-5'>Django rest framework, React, tailwindCSS, SSLcommerz, axios etc</p>
+                <p className='text-2 pb-5'>Django rest framework, React, JWT Authentication, tailwindCSS, SSLcommerz, axios etc</p>
 
                 <p className='text-3 py-2'>&gt;_Gallery</p>
                 <div>
