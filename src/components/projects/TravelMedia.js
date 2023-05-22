@@ -17,11 +17,11 @@ export default function TravelMedia() {
                         <div className='flex justify-start items-center text-4'>
                             <i class='bx bxs-folder' ></i>
                             <p className='px-2 py-2'>TravelMedia</p>
-                            <a target='_blank' rel='noopener noreferrer' href="" className='my-btns-2 hidden md:block'>Live</a>
+                            <a target='_blank' rel='noopener noreferrer' href="https://youtu.be/5SfQz5weNSg" className='my-btns-2 hidden md:block'>Live Demo</a>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/TravelMedia" className='my-btns-2 hidden md:block'>Github</a>
                         </div>
                         <div className='flex justify-start items-center text-4'>
-                            <a target='_blank' rel='noopener noreferrer' href="" className='my-btns-2 md:hidden block'>Live</a>
+                            <a target='_blank' rel='noopener noreferrer' href="https://youtu.be/5SfQz5weNSg" className='my-btns-2 md:hidden block'>Live Demo</a>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/TravelMedia" className='my-btns-2 md:hidden block'>Github</a>
                         </div>
 
@@ -44,11 +44,11 @@ export default function TravelMedia() {
                 <div className='flex justify-start items-center text-4'>
                     <i class='bx bxs-folder' ></i>
                     <p className='px-2 py-2'>TravelMedia</p>
-                    <a target='_blank' rel='noopener noreferrer' href="" className='my-btns-2 hidden md:block'>Live</a>
+                    <a target='_blank' rel='noopener noreferrer' href="https://youtu.be/5SfQz5weNSg" className='my-btns-2 hidden md:block'>Live Demo</a>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/TravelMedia" className='my-btns-2 hidden md:block'>Github</a>
                 </div>
                 <div className='flex justify-start items-center text-4'>
-                    <a target='_blank' rel='noopener noreferrer' href="" className='my-btns-2 md:hidden block'>Live</a>
+                    <a target='_blank' rel='noopener noreferrer' href="https://youtu.be/5SfQz5weNSg" className='my-btns-2 md:hidden block'>Live Demo</a>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/TravelMedia" className='my-btns-2 md:hidden block'>Github</a>
                 </div>
                 <p className='text-2 pb-5'>

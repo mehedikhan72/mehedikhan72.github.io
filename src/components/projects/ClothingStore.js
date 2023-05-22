@@ -18,12 +18,12 @@ export default function ClothingStore() {
                         <div className='flex justify-start items-center text-4 flex-wrap'>
                             <i class='bx bxs-folder' ></i>
                             <p className='px-2 py-2'>Clothing Store</p>
-                            <a target='_blank' rel='noopener noreferrer' className='my-btns-2 hidden md:block'>Live</a>
+                            {/* <a target='_blank' rel='noopener noreferrer' className='my-btns-2 hidden md:block'>Live</a> */}
                             <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-React' className='my-btns-2 hidden md:block'>Github-React</a>
                             <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 hidden md:block'>Github-DRF</a>
                         </div>
                         <div className='flex justify-start items-center text-4 flex-wrap'>
-                            <a target='_blank' rel='noopener noreferrer' className='my-btns-2 md:hidden block'>Live</a>
+                            {/* <a target='_blank' rel='noopener noreferrer' className='my-btns-2 md:hidden block'>Live</a> */}
                             <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-React' className='my-btns-2 md:hidden block'>Github-React</a>
                             <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 md:hidden block'>Github-DRF</a>
                         </div>
@@ -47,12 +47,12 @@ export default function ClothingStore() {
                 <div className='flex justify-start items-center text-4 flex-wrap'>
                     <i class='bx bxs-folder' ></i>
                     <p className='px-2 py-2'>Clothing Store</p>
-                    <a target='_blank' rel='noopener noreferrer' className='my-btns-2 hidden md:block'>Live</a>
+                    {/* <a target='_blank' rel='noopener noreferrer' className='my-btns-2 hidden md:block'>Live</a> */}
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-React' className='my-btns-2 hidden md:block'>Github-React</a>
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 hidden md:block'>Github-DRF</a>
                 </div>
                 <div className='flex justify-start items-center text-4 flex-wrap'>
-                    <a target='_blank' rel='noopener noreferrer' className='my-btns-2 md:hidden block'>Live</a>
+                    {/* <a target='_blank' rel='noopener noreferrer' className='my-btns-2 md:hidden block'>Live</a> */}
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-React' className='my-btns-2 md:hidden block'>Github-React</a>
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 md:hidden block'>Github-DRF</a>
                 </div>
