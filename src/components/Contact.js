@@ -9,6 +9,16 @@ function Contact(props) {
                 <p className='text-3 text-center px-2'>Please email me at</p>
                 <a href='mailto:lopingcard@gmail.com' className='text-4 text-center hover:text-indigo-500 hover:underline'>lopingcard@gmail.com</a>
             </div>
+            <div className='flex flex-wrap justify-center items-center'>
+                <p className='text-3 text-center py-5'>Or, find me on</p>
+                <div className='flex justify-center items-center'>
+                    <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/mehedikhan72/'><i className='p-2 text-3xl cursor-pointer bx bxl-linkedin-square' ></i></a>
+                    <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72'><i className='p-2 text-3xl cursor-pointer bx bxl-github' ></i></a>
+                    <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/MrTeflonXD/'><i className='p-2 text-3xl cursor-pointer bx bxl-facebook-circle' ></i></a>
+                    <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/mehedikhan_/'><i className='p-2 text-3xl cursor-pointer bx bxl-instagram-alt' ></i></a >
+                </div>
+                
+            </div>
         </div>
     )
 }
