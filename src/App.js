@@ -12,6 +12,7 @@ import Experience from "./components/Experience";
 
 function App() {
   const about = useRef(null);
+  const experience = useRef(null);
   const skills = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
@@ -25,10 +26,10 @@ function App() {
 
   return (
     <div className="App bg-[#323437] text-[#D1D0C5] min-h-screen">
-      <NavBar scrollToSection={scrollToSection} aboutRef={about} skillsRef={skills} projectsRef={projects} contactRef={contact} />
+      <NavBar scrollToSection={scrollToSection} aboutRef={about} experienceRef={experience} skillsRef={skills} projectsRef={projects} contactRef={contact} />
       <Hero />
       <About aboutRef={about} />
-      <Experience />
+      <Experience experienceRef={experience}/>
       <Skills skillsRef={skills} />
       <Projects projectsRef={projects} />
       <Contact contactRef={contact} />

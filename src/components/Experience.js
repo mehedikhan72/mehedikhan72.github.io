@@ -1,9 +1,9 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
-export default function Experience() {
+function Experience(props) {
   return (
-    <div className="m-5 p-5">
-      <p className="text-5 text-center">Experience</p>
+    <div ref={props.experienceRef} className="m-5 p-5">
+      <p className="text-5 text-center my-8">Experience</p>
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
         <p className="text-4 p-2">Open source contributor</p>
@@ -44,3 +44,5 @@ export default function Experience() {
     </div>
   );
 }
+
+export default forwardRef(Experience);

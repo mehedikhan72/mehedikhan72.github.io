@@ -41,6 +41,7 @@ export default function NavBar(props) {
         </a>
         <div className='hidden md:flex justify-center items-center'>
           <p onClick={() => props.scrollToSection(props.aboutRef)} className='px-4 text-2 cursor-pointer'>About</p>
+          <p onClick={() => props.scrollToSection(props.experienceRef)} className='px-4 text-2 cursor-pointer'>Experience</p>
           <p onClick={() => props.scrollToSection(props.skillsRef)} className='px-4 text-2' cursor-pointer>Skills</p>
           <p onClick={() => props.scrollToSection(props.projectsRef)} className='px-4 text-2 cursor-pointer'>Projects</p>
           <p onClick={() => props.scrollToSection(props.contactRef)} className='px-4 text-2 cursor-pointer'>Contact</p>
@@ -52,6 +53,7 @@ export default function NavBar(props) {
       </div>
       {navOpen && <div className='md:hidden flex flex-col justify-center items-center pb-5'>
         <p onClick={() => props.scrollToSection(props.aboutRef)} className='p-4 text-2 cursor-pointer'>About</p>
+        <p onClick={() => props.scrollToSection(props.experienceRef)} className='px-4 text-2 cursor-pointer'>Experience</p>
         <p onClick={() => props.scrollToSection(props.skillsRef)} className='p-4 text-2 cursor-pointer'>Skills</p>
         <p onClick={() => props.scrollToSection(props.projectsRef)} className='p-4 text-2 cursor-pointer'>Projects</p>
         <p onClick={() => props.scrollToSection(props.contactRef)} className='p-4 text-2 cursor-pointer'>Contact</p>
