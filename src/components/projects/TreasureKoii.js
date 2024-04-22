@@ -29,7 +29,7 @@ export default function TreasureKoii() {
             <div className="w-full xl:w-1/2">
               <div className="flex justify-start items-center text-4 flex-wrap">
                 <i class="bx bxs-folder"></i>
-                <p className="px-2 py-2">Treasure Hunt Organizing Platform</p>
+                <p className="px-2 py-2">Treasure Hunt Organizer</p>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function TreasureKoii() {
         <div>
           <div className="flex justify-start items-center text-4 flex-wrap">
             <i class="bx bxs-folder"></i>
-            <p className="px-2 py-2">Treasure Hunt Organizing Platform</p>
+            <p className="px-2 py-2">Treasure Hunt Organizer</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
