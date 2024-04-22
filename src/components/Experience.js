@@ -1,4 +1,4 @@
-import React, {forwardRef} from "react";
+import React, { forwardRef } from "react";
 
 function Experience(props) {
   return (
@@ -6,11 +6,38 @@ function Experience(props) {
       <p className="text-5 text-center my-8">Experience</p>
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
+        <p className="text-4 p-2">Freelance Developer</p>
+      </div>
+      <p className="text-2">
+        I've been working as a freelance developer for the past year. I've made
+        applications for small to medium scale businesses. Some of my clients
+        include
+        <a
+          className="hover:text-indigo-500 hover:underline px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.rantir.com/"
+        >
+          Rantir
+        </a>
+        ,
+        <a
+          className="hover:text-indigo-500 hover:underline px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https:www.chaarchakka.com"
+        >
+          ChaarChakka
+        </a>
+        etc.
+      </p>
+      <div className="flex justify-start items-center text-4">
+        <i class="bx bxs-folder"></i>
         <p className="text-4 p-2">Open source contributor</p>
       </div>
 
       <p className="text-2">
-        I've been working as an open source contributor in many small to
+        Working as an open source contributor in many small to
         large-scale applications. I've contributed to enterprise level projects
         like
         <a

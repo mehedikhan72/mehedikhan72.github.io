@@ -7,7 +7,7 @@ function Contact(props) {
             {/* TODO: email link here */}
             <div className='flex justify-center flex-wrap items-center p-5'>
                 <p className='text-3 text-center px-2'>Please email me at</p>
-                <a href='mailto:lopingcard@gmail.com' className='text-4 text-center hover:text-indigo-500 hover:underline'>lopingcard@gmail.com</a>
+                <a href='mailto:mehedi.72.khan@gmail.com' className='text-4 text-center hover:text-indigo-500 hover:underline'>mehedi.72.khan@gmail.com</a>
             </div>
             <div className='flex flex-wrap justify-center items-center'>
                 <p className='text-3 text-center'>Or, find me on</p>
