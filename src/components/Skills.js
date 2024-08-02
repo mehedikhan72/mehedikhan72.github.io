@@ -58,6 +58,7 @@ function Skills(props) {
           <p className="text-2 py-1">Django</p>
           <p className="text-2 py-1">Rest APIs</p>
           <p className="text-2 py-1">Djagno Rest Framework</p>
+          <p className="text-2 py-1">Spring Boot</p>
           <p className="text-2 py-1">Flask</p>
           <p className="text-2 py-1">Jinja</p>
           <br />
