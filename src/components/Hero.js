@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Hero() {
-    const image = 'static/me.webp'
+    const image = 'static/me2.webp'
     return (
         <div className='mx-2 mt-2 px-2 pt-16 md:mx-5 md:px-5 flex flex-wrap justify-center items-center'>
             <div className='flex justify-center flex-col items-center mx-5 md:mx-10 xl:mr-24 mt-5'>
@@ -13,7 +13,7 @@ export default function Hero() {
                 <a download="mehedikhan-resume" href="static/mehedikhan-resume-april-2024.pdf" className='my-btns-1'>Download Resume</a>
             </div>
             <div className='mx-5 md:mx-10 mt-5 xl:ml-24'>
-                <img className='w-76 h-76 md:w-[32rem] md:h-[32rem] object-cover w-' src={image} alt='Mehedi Khan' />
+                <img className='rounded-t-3xl w-76 h-76 md:w-[32rem] md:h-[32rem] object-cover w-' src={image} alt='Mehedi Khan' />
             </div>
         </div>
     )
