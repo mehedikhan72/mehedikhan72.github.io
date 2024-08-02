@@ -4,14 +4,14 @@ import Images from "./Images";
 export default function TravelMedia() {
   const [detailsOn, setDetailsOn] = useState(false);
   const images = [
-    "static/tm_1.PNG",
-    "static/tm_2.PNG",
+    "static/tm_1.webp",
+    "static/tm_2.webp",
     "static/tm_3.PNG",
     "static/tm_4.PNG",
-    "static/tm_5.PNG",
-    "static/tm_6.PNG",
+    "static/tm_5.webp",
+    "static/tm_6.webp",
     "static/tm_7.PNG",
-    "static/tm_8.PNG",
+    "static/tm_8.webp",
     "static/tm_9.PNG",
     "static/tm_10.PNG",
   ];

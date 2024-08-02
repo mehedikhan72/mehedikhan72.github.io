@@ -3,7 +3,7 @@ import Images from './Images'
 
 export default function ClothingStore() {
     const [detailsOn, setDetailsOn] = useState(false);
-    const images = ['static/hb_p_1.PNG', 'static/hb_p_2.PNG', 'static/hb_p_3.PNG', 'static/hb_p_4.PNG', 'static/hb_p_5.PNG', 'static/hb_p_6.PNG', 'static/hb_p_7.PNG',
+    const images = ['static/hb_p_1.webp', 'static/hb_p_2.webp', 'static/hb_p_3.PNG', 'static/hb_p_4.PNG', 'static/hb_p_5.PNG', 'static/hb_p_6.PNG', 'static/hb_p_7.PNG',
         'static/hb_p_8.PNG', 'static/hb_p_9.PNG', 'static/hb_p_10.PNG']
 
     const toggleDetails = () => {

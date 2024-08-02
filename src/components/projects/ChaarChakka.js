@@ -4,10 +4,10 @@ import Images from "./Images";
 export default function ChaarChakka() {
   const [detailsOn, setDetailsOn] = useState(false);
   const images = [
-    "static/cc_1.PNG",
-    "static/cc_2.PNG",
-    "static/cc_3.PNG",
-    "static/cc_4.PNG",
+    "static/cc_1.webp",
+    "static/cc_2.webp",
+    "static/cc_3.webp",
+    "static/cc_4.webp",
   ];
 
   const toggleDetails = () => {

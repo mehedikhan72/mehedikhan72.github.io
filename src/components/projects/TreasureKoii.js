@@ -4,7 +4,7 @@ import Images from "./Images";
 export default function TreasureKoii() {
   const [detailsOn, setDetailsOn] = useState(false);
   const images = [
-    "static/tk_1.PNG",
+    "static/tk_1.webp",
     "static/tk_2.PNG",
     "static/tk_3.PNG",
     "static/tk_4.PNG",
