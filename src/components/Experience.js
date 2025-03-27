@@ -18,7 +18,7 @@ function Experience(props) {
         >
           Systemica Institut.
         </a>
-        It's a German based company that provides training to Psychiatrists. My current role includes developing a scalable File Processing API.
+        It's a German based company that provides training to Psychiatrists. My current role includes developing a scalable File Processing API with Python & FastAPI.
       </p>
 
 
