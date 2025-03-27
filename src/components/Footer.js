@@ -17,7 +17,7 @@ export default function Footer() {
                 <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/mehedikhan_/'><i className='p-2 text-4xl cursor-pointer bx bxl-instagram-alt' ></i></a >
             </div>
 
-            <p className='text-1 text-center'>© 2023 Mehedi Khan. All rights reserved.</p>
+            <p className='text-1 text-center'>© 2025 Mehedi Khan. All rights reserved.</p>
         </div>
     )
 }

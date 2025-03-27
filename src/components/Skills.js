@@ -38,35 +38,34 @@ function Skills(props) {
           </div>
           <p className="text-2 py-1">React JS</p>
           <p className="text-2 py-1">TypeScript</p>
-          <p className="text-2 py-1">Chart JS</p>
           <p className="text-2 py-1">Tailwind CSS</p>
-          <p className="text-2 py-1">Bootstrap</p>
           <br />
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-cog"></i>
             <p className="text-3 py-4 px-2">Tools</p>
           </div>
           <p className="text-2 py-1">Git</p>
+          <p className="text-2 py-1">Docker</p>
+          <p className="text-2 py-1">Kubernetes</p>
           <p className="text-2 py-1">Postman</p>
-          <p className="text-2 py-1">VSCode</p>
         </div>
         <div className="m-5 p-5 bg-[#E2B714] text-[#323437] rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-server"></i>
             <p className="text-3 py-4 px-2">Backend</p>
           </div>
-          <p className="text-2 py-1">Django</p>
           <p className="text-2 py-1">Rest APIs</p>
-          <p className="text-2 py-1">Djagno Rest Framework</p>
           <p className="text-2 py-1">Spring Boot</p>
+          <p className="text-2 py-1">Django Rest Framework</p>
+          <p className="text-2 py-1">FastAPI</p>
           <p className="text-2 py-1">Flask</p>
-          <p className="text-2 py-1">Jinja</p>
           <br />
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-data"></i>
             <p className="text-3 py-4 px-2">Databases</p>
           </div>
           <p className="text-2 py-1">PostgreSQL</p>
+          <p className="text-2 py-1">Redis</p>
           <p className="text-2 py-1">SQLite</p>
         </div>
       </div>

@@ -9,8 +9,9 @@ export default function Hero() {
                     <p className='text-[#E2B714]'>Mehedi</p>
                     <p>Khan</p>
                 </div>
-                <p className='text-3 text-center py-5'>Full stack engineer. AI & ML enthusiast.</p>
-                <a download="mehedikhan-resume" href="static/mehedikhan-resume-april-2024.pdf" className='my-btns-1'>Download Resume</a>
+                <p className='text-3 text-center pt-2 pb-1'>Full stack engineer.</p>
+                <p className='text-1 text-center pt-1 pb-2'>Heavily into System Architecture, AI & ML</p>
+                <a download="mehedikhan-resume" href="static/mehedikhan-resume-march-2025.pdf" className='my-btns-1'>Download Resume</a>
             </div>
             <div className='mx-5 md:mx-10 mt-5 xl:ml-24'>
                 <img className='rounded-t-3xl w-76 h-76 md:w-[32rem] md:h-[32rem] object-cover w-' src={image} alt='Mehedi Khan' />
