@@ -91,7 +91,6 @@ function Skills(props) {
           </div>
           <p className="text-2 py-1">Responsive Design</p>
           <p className="text-2 py-1">Bootstrap</p>
-          <p className="text-2 py-1">Netlify</p>
         </div>
       </div>
     </div>
