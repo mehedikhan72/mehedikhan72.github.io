@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useRef} from "react";
 import Experience from "./components/Experience";
+import AwardAndAchievements from "./components/AwardAndAchievements";
 
 function App() {
   const about = useRef(null);
@@ -16,6 +17,7 @@ function App() {
   const skills = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
+  const awards = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -30,6 +32,7 @@ function App() {
       <Hero />
       <About aboutRef={about} />
       <Experience experienceRef={experience}/>
+      <AwardAndAchievements awardsRef={awards} />
       <Skills skillsRef={skills} />
       <Projects projectsRef={projects} />
       <Contact contactRef={contact} />

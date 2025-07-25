@@ -4,11 +4,14 @@ import ClothingStore from './projects/ClothingStore'
 import TravelMedia from './projects/TravelMedia';
 import TreasureKoii from './projects/TreasureKoii';
 import ChaarChakka from './projects/ChaarChakka';
+import Compiler from './projects/Compiler';
 
 function Projects(props) {
     return (
         <div ref={props.projectsRef} className='m-5'>
             <p className='text-5 p-5 text-center'>Past Projects</p>
+            <p className='text-4 p-5'>Noteworthy Academic Projects</p>
+            <Compiler />
             <p className='text-4 p-5'>Full Stack Web Applications</p>
             <ChaarChakka />
             <TreasureKoii />

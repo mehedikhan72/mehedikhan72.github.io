@@ -9,7 +9,7 @@ export default function Hero() {
                     <p className='text-[#E2B714]'>Mehedi</p>
                     <p>Khan</p>
                 </div>
-                <p className='text-3 text-center pt-2 pb-1'>Full stack engineer.</p>
+                <p className='text-3 text-center pt-2 pb-1'>Backend Engineer.</p>
                 <p className='text-1 text-center pt-1 pb-2'>Heavily into System Architecture, AI & ML</p>
                 <a download="mehedikhan-resume" href="static/mehedikhan-resume-march-2025.pdf" className='my-btns-1'>Download Resume</a>
             </div>
