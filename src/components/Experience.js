@@ -6,10 +6,10 @@ function Experience(props) {
       <p className="text-5 text-center my-8">Experience</p>
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Backend Engineer (December, 2024 - Present)</p>
+        <p className="text-4 p-2">Backend Engineer (December, 2024 - July, 2025)</p>
       </div>
       <p className="text-2">
-        I'm currently working remotely as a backend engineer at 
+        I worked remotely as a backend engineer at 
         <a
           className="hover:text-indigo-500 underline hover:underline px-1"
           target="_blank"
@@ -18,9 +18,8 @@ function Experience(props) {
         >
           Systemica Institut.
         </a>
-        It's a German based company that provides training to Psychiatrists. My current role includes developing a scalable File Processing API with Python & FastAPI.
+        It's a German-based company that provides training to Psychiatrists. My role included developing a scalable File Processing API with Python & FastAPI.
       </p>
-
 
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
