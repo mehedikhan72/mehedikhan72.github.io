@@ -18,7 +18,7 @@ export default function Poridhi2025() {
                     <div className='w-full xl:w-1/2'>
                         <div className='flex justify-start items-center text-4'>
                             <i class='bx bxs-trophy' ></i>
-                            <p className='px-2 py-2'>AI Engineering Hackathon Champion</p>
+                            <p className='px-2 py-2'>AI Engineering Hackathon - Champions</p>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/link-not-ready-yet" className='my-btns-2 hidden md:block'>Github</a>
                         </div>
                         <div className='flex justify-start items-center text-4'>

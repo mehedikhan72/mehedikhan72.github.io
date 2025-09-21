@@ -3,7 +3,7 @@ import Images from '../projects/Images'
 
 export default function IeeeVipCup2025() {
     const [detailsOn, setDetailsOn] = useState(false);
-    const images = ['static/ieeevipcup2025.webp']
+    const images = ['static/ieeevipcup2025champions.webp']
 
     const toggleDetails = () => {
         setDetailsOn(!detailsOn);
@@ -14,8 +14,8 @@ export default function IeeeVipCup2025() {
                 <div className='flex flex-col xl:flex-row justify-center items-center'>
                     <div className='w-full xl:w-1/2'>
                         <div className='flex justify-start items-center text-4'>
-                            <i class='bx bxs-award' ></i>
-                            <p className='px-2 py-2'>IEEE VIP Cup 2025 - Special Mention</p>
+                            <i className='bx bxs-award'></i>
+                            <p className='px-2 py-2'>IEEE VIP Cup 2025 - Champions</p>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/dummy-ieee-vip-cup-link" className='my-btns-2 hidden md:block'>Github</a>
                             <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 hidden md:block'>Paper</a>
                         </div>
@@ -25,10 +25,11 @@ export default function IeeeVipCup2025() {
                         </div>
 
                         <p className='text-2 pb-5'>
-                            Our team NeuronX received a Special Mention at the IEEE ICIP 2025 VIP Cup for our work on 
+                            Our team NeuronX emerged as the Champions of the IEEE ICIP 2025 VIP Cup for our work on 
                             real-time multimodal drone detection, tracking, and payload classification. We worked with 
                             RGB and infrared modalities under significant constraints, delivering robust models for 
-                            complex environments.
+                            complex environments. I had the honor of presenting our solution live at ICIP 2025 in 
+                            Anchorage, Alaska.
                         </p>
                     </div>
 
@@ -43,8 +44,8 @@ export default function IeeeVipCup2025() {
 
             {detailsOn && <div>
                 <div className='flex justify-start items-center text-4'>
-                    <i class='bx bxs-award' ></i>
-                    <p className='px-2 py-2'>IEEE VIP Cup 2025 - Special Mention</p>
+                    <i className='bx bxs-award'></i>
+                    <p className='px-2 py-2'>IEEE VIP Cup 2025 - Champions</p>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/dummy-ieee-vip-cup" className='my-btns-2 hidden md:block'>Github</a>
                     <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 hidden md:block'>Paper</a>
                 </div>
@@ -53,10 +54,11 @@ export default function IeeeVipCup2025() {
                     <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 md:hidden block'>Paper</a>
                 </div>
                 <p className='text-2 pb-5'>
-                    Our team NeuronX received a Special Mention at the IEEE ICIP 2025 VIP Cup for our work on 
+                    Our team NeuronX emerged as the Champions of the IEEE ICIP 2025 VIP Cup for our work on 
                     real-time multimodal drone detection, tracking, and payload classification. We worked with 
                     RGB and infrared modalities under significant constraints, delivering robust models for 
-                    complex environments.
+                    complex environments. I had the privilege of presenting our solution live at ICIP 2025 in 
+                    Anchorage, Alaska.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Challenge Overview</p>
@@ -77,10 +79,10 @@ export default function IeeeVipCup2025() {
 
                 <p className='text-3 py-2'>&gt;_Team and Recognition</p>
                 <p className='text-2 pb-5'>
-                    Team NeuronX consisted of me, Abrar Zahin Raihan, Sadik mahmud Shakshor, Sadman Sakib & Ruwad Naswan, 
-                    with graduate tutor Asib Rahman and supervisor Prof. Shamsuzzoha Bayzid. While only the top 3 teams 
-                    advance to present at ICIP 2025 in Anchorage, Alaska, our Special Mention recognition among 40+ 
-                    international entries validates our technical approach and months of dedicated work.
+                    Team NeuronX consisted of me, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib & Ruwad Naswan, 
+                    with graduate tutor Asib Rahman and supervisor Prof. Dr. Shamsuzzoha Bayzid. Becoming the Champions among 
+                    40+ international entries was a huge honor and validated our technical approach and months of dedicated work. 
+                    As part of the recognition, I had the honor of presenting our solution live at ICIP 2025 in Anchorage, Alaska.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Key Learnings</p>
