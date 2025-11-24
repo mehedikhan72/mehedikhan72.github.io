@@ -6,10 +6,28 @@ function Experience(props) {
       <p className="text-5 text-center my-8">Experience</p>
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Backend Engineer (December, 2024 - July, 2025)</p>
+        <p className="text-4 p-2">Research Assistant @ Sysmodeler.ai | Remote | (November, 2025 - Present)</p>
       </div>
       <p className="text-2">
-        I worked remotely as a backend engineer at 
+        My role at 
+        <a
+          className="hover:text-indigo-500 underline hover:underline px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://sysmodeler.ai/"
+        >
+          Sysmodeler.ai.
+        </a>
+        involves working on various novel research problems regarding AI-based SysML generation.
+      </p>
+      <br />
+
+      <div className="flex justify-start items-center text-4">
+        <i class="bx bxs-folder"></i>
+        <p className="text-4 p-2">Backend Engineer @ Systemica Institut | Remote | (December, 2024 - July, 2025)</p>
+      </div>
+      <p className="text-2">
+        My role at 
         <a
           className="hover:text-indigo-500 underline hover:underline px-1"
           target="_blank"
@@ -18,8 +36,9 @@ function Experience(props) {
         >
           Systemica Institut.
         </a>
-        It's a German-based company that provides training to Psychiatrists. My role included developing a scalable File Processing API with Python & FastAPI.
+        included developing a scalable & reliable File Processing API with Python & FastAPI.
       </p>
+      <br />
 
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
@@ -48,6 +67,8 @@ function Experience(props) {
         </a>
         etc.
       </p>
+      <br />
+
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
         <p className="text-4 p-2">Open source contributor (2023 - Present)</p>
@@ -93,6 +114,7 @@ function Experience(props) {
         </a>
         to see my other contributions.
       </p>
+      <br />
     </div>
   );
 }
