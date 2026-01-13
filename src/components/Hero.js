@@ -11,7 +11,7 @@ export default function Hero() {
                 </div>
                 <p className='text-3 text-center pt-2 pb-1'>Backend Engineer.</p>
                 <p className='text-1 text-center pt-1 pb-2'>Heavily into System Architecture, AI & ML</p>
-                <a download="mehedikhan-resume" href="static/mehedikhan-resume-nov2025.pdf" className='my-btns-1'>Download Resume</a>
+                <a download="mehedikhan-resume" href="static/mehedikhan-resume-jan26.pdf" className='my-btns-1'>Download Resume</a>
             </div>
             <div className='mx-5 md:mx-10 mt-5 xl:ml-24'>
                 <img className='rounded-t-3xl w-[16rem] h-auto md:w-[20rem] md:h-[28rem] object-cover w-' src={image} alt='Mehedi Khan' />
