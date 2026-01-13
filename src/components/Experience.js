@@ -36,7 +36,15 @@ function Experience(props) {
         >
           Systemica Institut.
         </a>
-        included developing a scalable & reliable File Processing API with Python & FastAPI.
+        included developing a scalable & reliable File Processing API with Python & FastAPI. |
+        <a
+          className="hover:text-indigo-500 underline hover:underline px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/1OZ9srLVw1oXkLgI46c1VtDezwR2hEHv-OKZ922u0z-w/edit?tab=t.0"
+        >
+          Design Document.
+        </a>
       </p>
       <br />
 
