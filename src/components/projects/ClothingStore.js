@@ -30,7 +30,7 @@ export default function ClothingStore() {
 
                         <p className='text-2 pb-5'>
                             This is an online store for a local clothing brand. It has most of the modern E-commerce features
-                            such as payment integration, three layer authorizations etc.
+                            such as payment integration, three-layer authorization etc.
                         </p>
                     </div>
 
@@ -58,7 +58,7 @@ export default function ClothingStore() {
                 </div>
                 <p className='text-2 pb-5'>
                     This is an online store for a local clothing brand. It has most of the modern E-commerce features
-                    such as payment integration, three layer authorizations etc.
+                    such as payment integration, three-layer authorization etc.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Used</p>
@@ -76,7 +76,7 @@ export default function ClothingStore() {
                     project and finally those obstacles were overcome.
                 </p>
                 <p className='text-2 pb-5'>
-                    I learned to make api calls effectively with axios, learned to use react
+                    I learned to make API calls effectively with axios, learned to use React
                     more efficiently and applied many industry practices.
                 </p>
                 <p className='text-2 pb-5'>

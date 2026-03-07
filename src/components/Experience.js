@@ -6,7 +6,7 @@ function Experience(props) {
       <p className="text-5 text-center my-8">Experience</p>
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Research Assistant @ Sysmodeler.ai | Remote | (November, 2025 - Present)</p>
+        <p className="text-4 p-2">Research Assistant @ Sysmodeler.ai | Remote | (November, 2025 - February, 2026)</p>
       </div>
       <p className="text-2">
         My role at 
@@ -16,9 +16,9 @@ function Experience(props) {
           rel="noopener noreferrer"
           href="https://sysmodeler.ai/"
         >
-          Sysmodeler.ai.
+          Sysmodeler.ai
         </a>
-        involves working on various novel research problems regarding AI-based SysML generation.
+        included working on various novel research problems regarding Model-Based Systems Engineering (MBSE) and AI-based SysML generation.
       </p>
       <br />
 
@@ -34,7 +34,7 @@ function Experience(props) {
           rel="noopener noreferrer"
           href="https://systemica-institut.de/"
         >
-          Systemica Institut.
+          Systemica Institut
         </a>
         included developing a scalable & reliable File Processing API with Python & FastAPI. |
         <a
@@ -50,12 +50,21 @@ function Experience(props) {
 
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Freelance Developer (2023 - 2024)</p>
+        <p className="text-4 p-2">Freelance Developer (2023 - Present)</p>
       </div>
       <p className="text-2">
-        I've been working as a freelance developer for the past two year. I've made
+        As a side gig, I've been working as a freelance developer for the past three years. I've made
         applications for small to medium scale businesses. Some of my clients
         include
+                <a
+          className="hover:text-indigo-500 hover:underline underline px-1"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.netra.news/"
+        >
+          Netra News
+        </a>
+        ,
         <a
           className="hover:text-indigo-500 hover:underline underline px-1"
           target="_blank"
@@ -79,7 +88,7 @@ function Experience(props) {
 
       <div className="flex justify-start items-center text-4">
         <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Open source contributor (2023 - Present)</p>
+        <p className="text-4 p-2">Open source contributor (2023 - 2024)</p>
       </div>
 
       <p className="text-2">

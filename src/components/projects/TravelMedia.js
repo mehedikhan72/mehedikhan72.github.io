@@ -24,9 +24,6 @@ export default function TravelMedia() {
       {!detailsOn && (
         <div>
           <div className="flex flex-col xl:flex-row justify-center items-center">
-            <div className="w-full xl:w-1/2 flex justify-center items-center">
-              <Images detailed={false} images={images} />
-            </div>
             <div className="w-full xl:w-1/2">
               <div className="flex justify-start items-center text-4">
                 <i class="bx bxs-folder"></i>
@@ -69,8 +66,11 @@ export default function TravelMedia() {
 
               <p className="text-2 pb-5">
                 This is a social media app where you could post and review your
-                latest trips with an adventure loving community.
+                latest trips with an adventure-loving community.
               </p>
+            </div>
+            <div className="w-full xl:w-1/2 flex justify-center items-center">
+              <Images detailed={false} images={images} />
             </div>
           </div>
           <div className="flex justify-center items-center">
@@ -126,7 +126,7 @@ export default function TravelMedia() {
           </div>
           <p className="text-2 pb-5">
             This is a social media app where you could post and review your
-            latest trips with an adventure loving community.
+            latest trips with an adventure-loving community.
           </p>
 
           <p className="text-3 py-2">&gt;_Tech Used</p>
@@ -146,13 +146,13 @@ export default function TravelMedia() {
             challenging project I have ever worked on.
           </p>
           <p className="text-2 pb-5">
-            Implementing realtime notifications, Google and social media
+            Implementing real-time notifications, Google and social media
             authentication were huge challenges for me and I was able to
             successfully implement them in my app. It has most of the modern
             social media features.
           </p>
           <p className="text-2 pb-5">
-            Learned using react properly and applied many industry practices.
+            Learned using React properly and applied many industry practices.
             Learned how websockets work and how to use Django channels to
             implement them. Learned using tokens for authentication and
             authorization and many more.

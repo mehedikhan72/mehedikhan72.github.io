@@ -12,9 +12,6 @@ export default function Poridhi2025() {
         <div className='p-5'>
             {!detailsOn && <div>
                 <div className='flex flex-col xl:flex-row justify-center items-center'>
-                    <div className='w-full xl:w-1/2 flex justify-center items-center'>
-                        <Images detailed={false} images={images} />
-                    </div>
                     <div className='w-full xl:w-1/2'>
                         <div className='flex justify-start items-center text-4'>
                             <i class='bx bxs-trophy' ></i>
@@ -30,6 +27,9 @@ export default function Poridhi2025() {
                             We developed an intent-based search system with multilingual capabilities, competing against 86 teams 
                             from 300+ participants nationwide and achieving optimal performance with minimal resources.
                         </p>
+                    </div>
+                    <div className='w-full xl:w-1/2 flex justify-center items-center'>
+                        <Images detailed={false} images={images} />
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
@@ -71,7 +71,7 @@ export default function Poridhi2025() {
                 <p className='text-3 py-2'>&gt;_Team and Competition</p>
                 <p className='text-2 pb-5'>
                     Team BUET XFACTOR consisted of me, Abrar Zahin Raihan, Ruwad Naswan, Md. Mehedi Hasan and Dipit Saha. 
-                    The hackathon saw participation from over 300+ students from across the country, with 86 teams competing for 
+                    The hackathon saw participation from 300+ students from across the country, with 86 teams competing for 
                     the championship. The competition focused on practical AI engineering challenges, testing both technical 
                     skills and resource management capabilities.
                 </p>

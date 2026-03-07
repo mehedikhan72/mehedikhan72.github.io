@@ -23,9 +23,6 @@ export default function TreasureKoii() {
       {!detailsOn && (
         <div>
           <div className="flex flex-col xl:flex-row justify-center items-center">
-            <div className="w-full xl:w-1/2 flex justify-center items-center">
-              <Images detailed={false} images={images} />
-            </div>
             <div className="w-full xl:w-1/2">
               <div className="flex justify-start items-center text-4 flex-wrap">
                 <i class="bx bxs-folder"></i>
@@ -87,9 +84,12 @@ export default function TreasureKoii() {
                 hunts. Users can create teams and take part in treasure hunts.
                 This app lets you create puzzles and participants solve them to
                 get to the next level. The overall user experience is very
-                interactive and fun with realtime leaderboards, announcements
+                interactive and fun with real-time leaderboards, announcements
                 and many more features.
               </p>
+            </div>
+            <div className="w-full xl:w-1/2 flex justify-center items-center">
+              <Images detailed={false} images={images} />
             </div>
           </div>
           <div className="flex justify-center items-center">
@@ -165,7 +165,7 @@ export default function TreasureKoii() {
             Users can create teams and take part in treasure hunts. This app
             lets you create puzzles and participants solve them to get to the
             next level. The overall user experience is very interactive and fun
-            with realtime leaderboards, announcements and many more features.
+            with real-time leaderboards, announcements and many more features.
           </p>
 
           <p className="text-3 py-2">&gt;_Tech Used</p>

@@ -22,7 +22,7 @@ export default function Compiler() {
 
                         <p className='text-2 pb-5'>
                             A full compiler for a subset of the C programming language, built for CSE310: Compiler Design course. 
-                            Implements the complete compilation pipeline from tokenizing to code generation, featuring modern C++ 
+                            Implements the complete compilation pipeline from tokenization to code generation, featuring modern C++ 
                             symbol tables, Flex lexical analysis, ANTLR4 parsing, and x86 assembly output that runs on real emulators.
                         </p>
                     </div>
@@ -43,7 +43,7 @@ export default function Compiler() {
                 </div>
                 <p className='text-2 pb-5'>
                     A full compiler for a subset of the C programming language, built for CSE310: Compiler Design course. 
-                    Implements the complete compilation pipeline from tokenizing to code generation, featuring modern C++ 
+                    Implements the complete compilation pipeline from tokenization to code generation, featuring modern C++ 
                     symbol tables, Flex lexical analysis, ANTLR4 parsing, and x86 assembly output that runs on real emulators.
                 </p>
 

@@ -46,7 +46,7 @@ export default function ChaarChakka() {
               <p className="text-2 pb-5">
                 ChaarChakka is a platform where you can buy/sell new and used
                 vehicles(cars and bikes). Me and a friend of mine made this for
-                a client and the I did the entire backend for it.
+                a client and I did the entire backend for it.
               </p>
             </div>
             <div className="w-full xl:w-1/2 flex justify-center items-center">
@@ -92,7 +92,7 @@ export default function ChaarChakka() {
           <p className="text-2 pb-5">
             ChaarChakka is a platform where you can buy/sell new and used
             vehicles(cars and bikes). Me and a friend of mine made this for a
-            client and the I did the entire backend for it.
+            client and I did the entire backend for it.
           </p>
 
           <p className="text-3 py-2">&gt;_Tech Used</p>

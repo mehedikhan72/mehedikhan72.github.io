@@ -27,7 +27,7 @@ function App() {
   }
 
   return (
-    <div className="App bg-[#323437] text-[#D1D0C5] min-h-screen">
+    <div className="App text-primary bg-secondary min-h-screen">
       <NavBar scrollToSection={scrollToSection} aboutRef={about} experienceRef={experience} skillsRef={skills} projectsRef={projects} contactRef={contact} />
       <Hero />
       <About aboutRef={about} />

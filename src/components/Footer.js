@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className='p-5 md:p-10 text-[#323437] bg-[#E2B714]'>
+        <div className='p-5 md:p-10 text-secondary bg-primary'>
             <p className='text-center text-2 p-2'>
                 <i className='bx bxs-quote-left p-2'></i>
                 Men are haunted by the vastness of eternity. And so we ask ourselves: will our actions echo across the centuries?
@@ -17,7 +17,7 @@ export default function Footer() {
                 <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/mehedikhan_/'><i className='p-2 text-4xl cursor-pointer bx bxl-instagram-alt' ></i></a >
             </div>
 
-            <p className='text-1 text-center'>© 2025 Mehedi Khan. All rights reserved.</p>
+            <p className='text-1 text-center'>© 2026 Mehedi Khan. All rights reserved.</p>
         </div>
     )
 }

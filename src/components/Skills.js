@@ -11,7 +11,7 @@ function Skills(props) {
       </p>
 
       <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap justify-center items-center m-2 p-2">
-        <div className="m-5 p-5 bg-[#E2B714] text-[#323437] rounded-md text-center w-[250px] h-[550px] flex  flex-col justify-center items-center">
+        <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex  flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-world"></i>
             <p className="text-3 py-4 px-2">Languages</p>
@@ -33,7 +33,7 @@ function Skills(props) {
           <p className="text-2 py-1">Pandas</p>
           <p className="text-2 py-1">OpenCV</p>
         </div>
-        <div className="m-5 p-5 bg-[#E2B714] text-[#323437] rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
+        <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-server"></i>
             <p className="text-3 py-4 px-2">Backend</p>
@@ -53,7 +53,7 @@ function Skills(props) {
           <p className="text-2 py-1">SQLite</p>
           <p className="text-2 py-1">DragonflyDB</p>
         </div>
-        <div className="m-5 p-5 bg-[#E2B714] text-[#323437] rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
+        <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-cloud"></i>
             <p className="text-3 py-4 px-2">Cloud/DevOps</p>
@@ -74,7 +74,7 @@ function Skills(props) {
           <p className="text-2 py-1">Locust</p>
           <p className="text-2 py-1">Firebase</p>
         </div>
-        <div className="m-5 p-5 bg-[#E2B714] text-[#323437] rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
+        <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-code-alt"></i>
             <p className="text-3 py-4 px-2">Frontend</p>

@@ -27,7 +27,7 @@ export default function AjkeKiKorbo() {
                         <p className='text-2 pb-5'>
                             AjkeKiKorbo is a day planner app which lets you plan your days and complete your tasks easily.
                             It also tracks your progress and shows you how you've been doing.
-                            This was my first deployed and production ready app.
+                            This was my first deployed and production-ready app.
                         </p>
                     </div>
 
@@ -54,7 +54,7 @@ export default function AjkeKiKorbo() {
                 <p className='text-2 pb-5'>
                     AjkeKiKorbo is a day planner app which lets you plan your days and complete your tasks easily.
                     It also tracks your progress and shows you how you've been doing.
-                    This was my first deployed and production ready app.
+                    This was my first deployed and production-ready app.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Used</p>
@@ -78,7 +78,7 @@ export default function AjkeKiKorbo() {
                 </p>
                 <p className='text-2 pb-5'>
                     I learned how to make custom 404 error pages. Since this was my first deployed app,
-                    I learned so much on databases, deployment and so on. I had to make this app as efficient
+                    I learned so much about databases, deployment and so on. I had to make this app as efficient
                     as possible so users could read from and write to the database without any hassle.
                     This app also welcomes users upon registration via email so I learned to work with
                     environment variables and also 'gitignore' them to make things secure. So I would

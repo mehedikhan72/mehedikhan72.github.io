@@ -41,9 +41,9 @@ code {
 }
 
 .my-btns-1 {
-  @apply font-bold text-lg px-4 py-2 m-2 rounded-md bg-[#323437] text-[#D1D0C5] border-2 border-[#D1D0C5] hover:bg-[#D1D0C5] hover:text-[#323437] hover:border-[#323437];
+  @apply font-bold text-base px-3 py-1.5 m-2 rounded-md bg-primary text-secondary border-2 border-secondary hover:bg-secondary hover:text-primary hover:border-primary;
 }
 
 .my-btns-2 {
-   @apply font-bold text-base px-3 py-1 m-2 rounded-md bg-[#323437] text-[#D1D0C5] border-2 border-[#D1D0C5] hover:bg-[#D1D0C5] hover:text-[#323437] hover:border-[#323437];
+   @apply font-bold text-sm px-2.5 py-0.5 m-2 rounded-md bg-primary text-secondary border-2 border-secondary hover:bg-secondary hover:text-primary hover:border-primary;
 }
