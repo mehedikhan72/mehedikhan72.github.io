@@ -1,0 +1,13 @@
+{
+  "blogs": [
+    {
+      "slug": "memories-of-north",
+      "title": "Memories of North: A journey through northwestern Bangladesh",
+      "date": "2026-02-25",
+      "category": "travel",
+      "excerpt": "My unforgettable trip through the northwestern regions of Bangladesh. From the vibrant city of Rajshahi to the serene landscapes of Naogaon, Rangpur and Bogura, this journey was filled with adventure, hospitality and most importantly - friends.",
+      "image": "/blog-images/memories-of-north-1.jpg",
+      "file": "/blogs/memories-of-north.md"
+    }
+  ]
+}
