@@ -11,6 +11,7 @@ function BlogPost({ content }) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeHighlight, rehypeRaw]}
+        urlTransform={(url) => url}
         components={{
           // Custom component rendering
           // eslint-disable-next-line jsx-a11y/anchor-has-content
