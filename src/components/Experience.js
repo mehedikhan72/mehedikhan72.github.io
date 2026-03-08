@@ -4,9 +4,9 @@ function Experience(props) {
   return (
     <div ref={props.experienceRef} className="m-5 p-5">
       <p className="text-5 text-center my-8">Experience</p>
-      <div className="flex justify-start items-center text-4">
-        <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Research Assistant @ Sysmodeler.ai | Remote | (November, 2025 - February, 2026)</p>
+      <div className="flex justify-start text-4">
+        <i class="bx bxs-folder pt-1"></i>
+        <p className="text-4 px-2 pb-2">Research Assistant @ Sysmodeler.ai | Remote | (November, 2025 - February, 2026)</p>
       </div>
       <p className="text-2">
         My role at 
@@ -22,9 +22,9 @@ function Experience(props) {
       </p>
       <br />
 
-      <div className="flex justify-start items-center text-4">
-        <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Backend Engineer @ Systemica Institut | Remote | (December, 2024 - July, 2025)</p>
+      <div className="flex justify-start text-4">
+        <i class="bx bxs-folder pt-1"></i>
+        <p className="text-4 px-2 pb-2">Backend Engineer @ Systemica Institut | Remote | (December, 2024 - July, 2025)</p>
       </div>
       <p className="text-2">
         My role at 
@@ -48,9 +48,9 @@ function Experience(props) {
       </p>
       <br />
 
-      <div className="flex justify-start items-center text-4">
-        <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Freelance Developer (2023 - Present)</p>
+      <div className="flex justify-start text-4">
+        <i class="bx bxs-folder pt-1"></i>
+        <p className="text-4 px-2 pb-2">Freelance Developer (2023 - Present)</p>
       </div>
       <p className="text-2">
         As a side gig, I've been working as a freelance developer for the past three years. I've made
@@ -86,9 +86,9 @@ function Experience(props) {
       </p>
       <br />
 
-      <div className="flex justify-start items-center text-4">
-        <i class="bx bxs-folder"></i>
-        <p className="text-4 p-2">Open source contributor (2023 - 2024)</p>
+      <div className="flex justify-start text-4">
+        <i class="bx bxs-folder pt-1"></i>
+        <p className="text-4 px-2 pb-2">Open source contributor (2023 - 2024)</p>
       </div>
 
       <p className="text-2">

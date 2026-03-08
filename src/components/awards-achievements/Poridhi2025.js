@@ -13,8 +13,8 @@ export default function Poridhi2025() {
             {!detailsOn && <div>
                 <div className='flex flex-col xl:flex-row justify-center items-center'>
                     <div className='w-full xl:w-1/2'>
-                        <div className='flex justify-start items-center text-4'>
-                            <i class='bx bxs-trophy' ></i>
+                        <div className='flex justify-start text-4'>
+                            <i class='bx bxs-trophy pt-3' ></i>
                             <p className='px-2 py-2'>AI Engineering Hackathon - Champions</p>
                             <a target='_blank' rel='noopener noreferrer' href="https://docs.google.com/document/d/1VeiKgYZ1eHKn8dpIz-29dQyCuzJx6OQ9i3UEPMOzuJA/edit?tab=t.0" className='my-btns-2 hidden md:block'>Design Document</a>
                         </div>

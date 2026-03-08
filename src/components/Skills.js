@@ -4,8 +4,8 @@ function Skills(props) {
   return (
     <div ref={props.skillsRef} className="m-5 p-5 ">
       <p className="text-5 text-center">Skills</p>
-      <p className="text-center text-3 py-5">
-        I'm a complete agnostic when it comes to technology. Whatever works best for the problem at hand, I use that.
+      <p className="text-center text-2 py-5">
+        I'm completely agnostic when it comes to technologies. Whatever works best for the problem at hand, I use that.
         <br />
         Here are some of the technologies I have worked with:
       </p>
@@ -31,13 +31,16 @@ function Skills(props) {
           <p className="text-2 py-1">PyTorch</p>
           <p className="text-2 py-1">NumPy</p>
           <p className="text-2 py-1">Pandas</p>
-          <p className="text-2 py-1">OpenCV</p>
+          <p className="text-2 py-1">Scikit-learn</p>
+          <p className="text-2 py-1">TensorFlow</p>
         </div>
         <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
           <div className="flex justify-center items-center">
             <i class="text-3xl bx bx-server"></i>
             <p className="text-3 py-4 px-2">Backend</p>
           </div>
+          <p className="text-2 py-1">Distributed Systems</p>
+          <p className="text-2 py-1">Microservices</p>
           <p className="text-2 py-1">Rest APIs</p>
           <p className="text-2 py-1">Spring Boot</p>
           <p className="text-2 py-1">Django Rest Framework</p>
@@ -49,8 +52,8 @@ function Skills(props) {
             <p className="text-3 py-4 px-2">Databases</p>
           </div>
           <p className="text-2 py-1">PostgreSQL</p>
+          <p className="text-2 py-1">MySQL</p>
           <p className="text-2 py-1">Redis</p>
-          <p className="text-2 py-1">SQLite</p>
           <p className="text-2 py-1">DragonflyDB</p>
         </div>
         <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">
@@ -71,7 +74,7 @@ function Skills(props) {
           </div>
           <p className="text-2 py-1">Git</p>
           <p className="text-2 py-1">Postman</p>
-          <p className="text-2 py-1">Locust</p>
+          <p className="text-2 py-1">WireShark</p>
           <p className="text-2 py-1">Firebase</p>
         </div>
         <div className="m-5 p-5 bg-primary text-secondary rounded-md text-center w-[250px] h-[550px] flex flex-col justify-center items-center">

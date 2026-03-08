@@ -13,8 +13,8 @@ export default function Footer() {
             <div className='flex justify-center items-center m-5'>
                 <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/mehedikhan72/'><i className='p-2 text-4xl cursor-pointer bx bxl-linkedin-square' ></i></a>
                 <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72'><i className='p-2 text-4xl cursor-pointer bx bxl-github' ></i></a>
-                <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/MrTeflonXD/'><i className='p-2 text-4xl cursor-pointer bx bxl-facebook-circle' ></i></a>
-                <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/mehedikhan_/'><i className='p-2 text-4xl cursor-pointer bx bxl-instagram-alt' ></i></a >
+                <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/mehed1khan/'><i className='p-2 text-4xl cursor-pointer bx bxl-facebook-circle' ></i></a>
+                <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/mehed1khan/'><i className='p-2 text-4xl cursor-pointer bx bxl-instagram-alt' ></i></a >
             </div>
 
             <p className='text-1 text-center'>© 2026 Mehedi Khan. All rights reserved.</p>

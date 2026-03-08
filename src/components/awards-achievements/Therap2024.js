@@ -13,8 +13,8 @@ export default function Therap2024() {
             {!detailsOn && <div>
                 <div className='flex flex-col xl:flex-row justify-center items-center'>
                     <div className='w-full xl:w-1/2'>
-                        <div className='flex justify-start items-center text-4'>
-                            <i class='bx bxs-medal' ></i>
+                        <div className='flex justify-start text-4'>
+                            <i class='bx bxs-medal pt-3' ></i>
                             <p className='px-2 py-2'>Therap JavaFest 2024 - Top 10 Finalist</p>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/pathfinder-api" className='my-btns-2 hidden md:block'>Github</a>
                         </div>

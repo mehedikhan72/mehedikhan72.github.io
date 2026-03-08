@@ -13,8 +13,8 @@ export default function IeeeVipCup2025() {
             {!detailsOn && <div>
                 <div className='flex flex-col xl:flex-row justify-center items-center'>
                     <div className='w-full xl:w-1/2'>
-                        <div className='flex justify-start items-center text-4'>
-                            <i className='bx bxs-award'></i>
+                        <div className='flex justify-start text-4'>
+                            <i className='bx bxs-award pt-3'></i>
                             <p className='px-2 py-2'>IEEE VIP Cup 2025 - Champions</p>
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/dummy-ieee-vip-cup-link" className='my-btns-2 hidden md:block'>Github</a>
                             <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 hidden md:block'>Paper</a>
