@@ -1,0 +1,124 @@
+{
+  "blogs": [
+    {
+      "slug": "paris-adventure-2026",
+      "title": "My Travel Adventures in Paris",
+      "date": "2026-03-08",
+      "category": "travel",
+      "excerpt": "Exploring the City of Light: from the Eiffel Tower to hidden cafes in Montmartre. A journey through art, culture, and incredible French cuisine.",
+      "file": "/blogs/paris-adventure-2026.md"
+    },
+    {
+      "slug": "building-scalable-systems",
+      "title": "Building Scalable Systems",
+      "date": "2026-03-09",
+      "category": "technical",
+      "excerpt": "Deep dive into architectural patterns for building systems that can handle millions of users. Learn about microservices, load balancing, and database optimization.",
+      "file": "/blogs/building-scalable-systems.md"
+    },
+    {
+      "slug": "tokyo-street-food-guide",
+      "title": "Tokyo Street Food Guide",
+      "date": "2026-03-05",
+      "category": "travel",
+      "excerpt": "Discovering the best street food Tokyo has to offer. From takoyaki to ramen stands, this guide will take you through the culinary wonders of Japan's capital.",
+      "file": "/blogs/tokyo-street-food-guide.md"
+    },
+    {
+      "slug": "react-performance-optimization",
+      "title": "React Performance Optimization Techniques",
+      "date": "2026-03-07",
+      "category": "technical",
+      "excerpt": "Master the art of optimizing React applications. Learn about memoization, code splitting, lazy loading, and other techniques to make your apps blazing fast.",
+      "file": "/blogs/react-performance-optimization.md"
+    },
+    {
+      "slug": "hiking-swiss-alps",
+      "title": "Hiking Through the Swiss Alps",
+      "date": "2026-03-01",
+      "category": "travel",
+      "excerpt": "An unforgettable adventure through Switzerland's most beautiful mountain trails. Breathtaking views, challenging hikes, and cozy mountain huts await.",
+      "file": "/blogs/hiking-swiss-alps.md"
+    },
+    {
+      "slug": "docker-kubernetes-guide",
+      "title": "Docker and Kubernetes: A Comprehensive Guide",
+      "date": "2026-03-04",
+      "category": "technical",
+      "excerpt": "Everything you need to know about containerization and orchestration. From basic Docker concepts to advanced Kubernetes deployments.",
+      "file": "/blogs/docker-kubernetes-guide.md"
+    },
+    {
+      "slug": "bali-spiritual-journey",
+      "title": "Finding Peace in Bali",
+      "date": "2026-02-28",
+      "category": "travel",
+      "excerpt": "A spiritual journey through Bali's temples, rice terraces, and beaches. Discovering mindfulness, yoga, and the island's unique culture.",
+      "file": "/blogs/bali-spiritual-journey.md"
+    },
+    {
+      "slug": "machine-learning-basics",
+      "title": "Machine Learning Fundamentals",
+      "date": "2026-03-02",
+      "category": "technical",
+      "excerpt": "Start your journey into AI and machine learning. Understanding algorithms, neural networks, and practical applications for beginners.",
+      "file": "/blogs/machine-learning-basics.md"
+    },
+    {
+      "slug": "iceland-northern-lights",
+      "title": "Chasing Northern Lights in Iceland",
+      "date": "2026-02-25",
+      "category": "travel",
+      "excerpt": "The magical experience of witnessing Aurora Borealis in Iceland's pristine landscapes. Tips for photography and the best viewing locations.",
+      "file": "/blogs/iceland-northern-lights.md"
+    },
+    {
+      "slug": "typescript-best-practices",
+      "title": "TypeScript Best Practices for 2026",
+      "date": "2026-02-27",
+      "category": "technical",
+      "excerpt": "Modern TypeScript patterns and practices. Learn how to write type-safe, maintainable code with the latest features and tools.",
+      "file": "/blogs/typescript-best-practices.md"
+    },
+    {
+      "slug": "morocco-desert-adventure",
+      "title": "Desert Adventures in Morocco",
+      "date": "2026-02-22",
+      "category": "travel",
+      "excerpt": "From the bustling souks of Marrakech to the serene Sahara Desert. An epic journey through Morocco's diverse landscapes and rich culture.",
+      "file": "/blogs/morocco-desert-adventure.md"
+    },
+    {
+      "slug": "graphql-api-design",
+      "title": "Modern API Design with GraphQL",
+      "date": "2026-02-24",
+      "category": "technical",
+      "excerpt": "Building efficient and flexible APIs with GraphQL. Learn about schema design, resolvers, and best practices for production applications.",
+      "file": "/blogs/graphql-api-design.md"
+    },
+    {
+      "slug": "new-zealand-road-trip",
+      "title": "Ultimate New Zealand Road Trip",
+      "date": "2026-02-20",
+      "category": "travel",
+      "excerpt": "Three weeks exploring New Zealand's stunning landscapes. From fjords to geothermal wonders, this is the ultimate travel guide.",
+      "file": "/blogs/new-zealand-road-trip.md"
+    },
+    {
+      "slug": "serverless-architecture",
+      "title": "Serverless Architecture Patterns",
+      "date": "2026-02-21",
+      "category": "technical",
+      "excerpt": "Understanding serverless computing and when to use it. Exploring AWS Lambda, Azure Functions, and best practices for serverless applications.",
+      "file": "/blogs/serverless-architecture.md"
+    },
+    {
+      "slug": "peru-machu-picchu",
+      "title": "Journey to Machu Picchu",
+      "date": "2026-02-18",
+      "category": "travel",
+      "excerpt": "Trekking the Inca Trail to reach the ancient citadel of Machu Picchu. A transformative journey through Peruvian history and natural beauty.",
+      "file": "/blogs/peru-machu-picchu.md"
+    }
+  ]
+}

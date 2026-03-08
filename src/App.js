@@ -1,43 +1,19 @@
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import BlogsPage from './pages/BlogsPage';
+import BlogPostPage from './pages/BlogPostPage';
+import NotFoundPage from './pages/NotFoundPage';
 import './index.css';
 import 'boxicons/css/boxicons.min.css';
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { useRef} from "react";
-import Experience from "./components/Experience";
-import AwardAndAchievements from "./components/AwardAndAchievements";
 
 function App() {
-  const about = useRef(null);
-  const experience = useRef(null);
-  const skills = useRef(null);
-  const projects = useRef(null);
-  const contact = useRef(null);
-  const awards = useRef(null);
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth"
-    })
-  }
-
   return (
-    <div className="App text-primary bg-secondary min-h-screen">
-      <NavBar scrollToSection={scrollToSection} aboutRef={about} experienceRef={experience} skillsRef={skills} projectsRef={projects} contactRef={contact} />
-      <Hero />
-      <About aboutRef={about} />
-      <Experience experienceRef={experience}/>
-      <AwardAndAchievements awardsRef={awards} />
-      <Skills skillsRef={skills} />
-      <Projects projectsRef={projects} />
-      <Contact contactRef={contact} />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/blogs" element={<BlogsPage />} />
+      <Route path="/blogs/:slug" element={<BlogPostPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 }
 
