@@ -132,6 +132,17 @@ function Experience(props) {
         to see my other contributions.
       </p>
       <br />
+
+      <div className="flex justify-start text-4">
+        <i class="bx bxs-folder pt-1"></i>
+        <p className="text-4 px-2 pb-2">Private Tutor (2023 - Present)</p>
+      </div>
+      <p className="text-2">
+        Alongside my professional and academic commitments, I tutor students across a range of subjects and curricula.
+        On the university side, I've worked with multiple CS students on topics including Data Structures &amp; Algorithms, STL in C++, and core Java.
+        At the secondary and higher secondary level, I've taught Physics and Mathematics to students under the Bangladeshi national curriculum as well as the Cambridge, Canadian, and Australian international curricula.
+      </p>
+      <br />
     </div>
   );
 }
