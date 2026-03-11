@@ -24,7 +24,7 @@ export default function IeeeVipCup2025() {
                             <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 md:hidden block'>Paper</a>
                         </div>
 
-                        <p className='text-2 pb-5'>
+                        <p className='text-2 pb-5 pr-2'>
                             Our team NeuronX emerged as the Champions of the IEEE ICIP 2025 VIP Cup for our work on 
                             real-time multimodal drone detection, tracking, and payload classification. We worked with 
                             RGB and infrared modalities under significant constraints, delivering robust models for 
@@ -53,7 +53,7 @@ export default function IeeeVipCup2025() {
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/dummy-ieee-vip-cup" className='my-btns-2 md:hidden block'>Github</a>
                     <a target='_blank' rel='noopener noreferrer' href="https://dummy-paper-link.com" className='my-btns-2 md:hidden block'>Paper</a>
                 </div>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Our team NeuronX emerged as the Champions of the IEEE ICIP 2025 VIP Cup for our work on 
                     real-time multimodal drone detection, tracking, and payload classification. We worked with 
                     RGB and infrared modalities under significant constraints, delivering robust models for 
@@ -62,10 +62,10 @@ export default function IeeeVipCup2025() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Challenge Overview</p>
-                <p className='text-2 pb-5'>The IEEE VIP Cup 2025 focused on multimodal drone detection, tracking, and payload identification. Teams had to build robust models combining RGB and infrared modalities, working with highly noisy and distorted data while delivering real-time inference in complex environments.</p>
+                <p className='text-2 pb-5 pr-2'>The IEEE VIP Cup 2025 focused on multimodal drone detection, tracking, and payload identification. Teams had to build robust models combining RGB and infrared modalities, working with highly noisy and distorted data while delivering real-time inference in complex environments.</p>
 
                 <p className='text-3 py-2'>&gt;_Technical Approach</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     We developed fusion pipelines resilient to fog, occlusion, and camera instability. Our approach tackled 
                     thermal contrast gaps in IR data and implemented robust detection algorithms capable of handling 
                     challenging environmental conditions. The solution required real-time processing capabilities while 
@@ -78,7 +78,7 @@ export default function IeeeVipCup2025() {
                 </div>
 
                 <p className='text-3 py-2'>&gt;_Team and Recognition</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Team NeuronX consisted of me, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib & Ruwad Naswan, 
                     with graduate tutor Asib Rahman and supervisor Prof. Dr. Shamsuzzoha Bayzid. Becoming the Champions among 
                     40+ international entries was a huge honor and validated our technical approach and months of dedicated work. 
@@ -86,7 +86,7 @@ export default function IeeeVipCup2025() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Key Learnings</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     This challenge pushed us to work with multimodal data fusion under real-world constraints. We gained 
                     deep experience in handling noisy sensor data, developing robust computer vision pipelines, and 
                     optimizing models for real-time inference. The collaborative aspect with my brilliant teammates 

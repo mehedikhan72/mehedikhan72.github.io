@@ -19,27 +19,13 @@ export default function ElectionNetraNews() {
         <div>
           <div className="flex flex-col xl:flex-row justify-center items-center">
             <div className="w-full xl:w-1/2">
-              <div className="flex justify-start items-center text-4 flex-wrap">
-                <i class="bx bxs-folder"></i>
-                <p className="px-2 py-2">Live Election Monitoring System - Netra News</p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.netra.news"
-                  className="my-btns-2 hidden md:block"
-                >
-                  Netra News
-                </a>
+              <div className='flex justify-start text-4'>
+                  <i class='bx bxs-folder pt-3' ></i>
+                  <p className='px-2 py-2'>Live Election Monitor System - Netra News</p>
+                  <a target='_blank' rel='noopener noreferrer' href="https://mehedikhan.me/blogs/election-monitor-system-netranews" className='my-btns-2 hidden md:block'>Blog Post</a>
               </div>
-              <div className="flex justify-start items-center text-4 flex-wrap">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.netra.news"
-                  className="my-btns-2 md:hidden block"
-                >
-                  Netra News
-                </a>
+              <div className='flex justify-start items-center text-4'>
+                  <a target='_blank' rel='noopener noreferrer' href="https://mehedikhan.me/blogs/election-monitor-system-netranews" className='my-btns-2 md:hidden block'>Blog Post</a>
               </div>
 
               <p className="text-2 pb-5">
@@ -66,26 +52,19 @@ export default function ElectionNetraNews() {
 
       {detailsOn && (
         <div>
-          <div className="flex justify-start items-center text-4 flex-wrap">
-            <i class="bx bxs-folder"></i>
+          <div className="flex justify-start text-4">
+            <i class="bx bxs-folder pt-3"></i>
             <p className="px-2 py-2">Live Election Monitoring System - Netra News</p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.netra.news"
-              className="my-btns-2 hidden md:block"
-            >
-              Netra News
-            </a>
+            <a target='_blank' rel='noopener noreferrer' href="https://mehedikhan.me/blogs/election-monitor-system-netranews" className='my-btns-2 hidden md:block'>Blog Post</a>
           </div>
-          <div className="flex justify-start items-center text-4 flex-wrap">
+          <div className="flex justify-start items-center text-4">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.netra.news"
+              href="https://www.mehedikhan.com/blog/election-monitoring-system-netranews"
               className="my-btns-2 md:hidden block"
             >
-              Netra News
+              Blog Post
             </a>
           </div>
 

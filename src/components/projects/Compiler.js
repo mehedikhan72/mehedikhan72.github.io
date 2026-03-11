@@ -20,7 +20,7 @@ export default function Compiler() {
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/CSE310-Compiler" className='my-btns-2 md:hidden block'>Github</a>
                         </div>
 
-                        <p className='text-2 pb-5'>
+                        <p className='text-2 pb-5 pr-2'>
                             A full compiler for a subset of the C programming language, built for CSE310: Compiler Design course. 
                             Implements the complete compilation pipeline from tokenization to code generation, featuring modern C++ 
                             symbol tables, Flex lexical analysis, ANTLR4 parsing, and x86 assembly output that runs on real emulators.
@@ -41,17 +41,17 @@ export default function Compiler() {
                 <div className='flex justify-start items-center text-4'>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/CSE310-Compiler" className='my-btns-2 md:hidden block'>Github</a>
                 </div>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     A full compiler for a subset of the C programming language, built for CSE310: Compiler Design course. 
                     Implements the complete compilation pipeline from tokenization to code generation, featuring modern C++ 
                     symbol tables, Flex lexical analysis, ANTLR4 parsing, and x86 assembly output that runs on real emulators.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Stack</p>
-                <p className='text-2 pb-5'>C++, Flex (yyFlex), ANTLR4, x86 Assembly, Java, Shell Scripting, EMU8086, DOSBox.</p>
+                <p className='text-2 pb-5 pr-2'>C++, Flex (yyFlex), ANTLR4, x86 Assembly, Java, Shell Scripting, EMU8086, DOSBox.</p>
 
                 <p className='text-3 py-2'>&gt;_Compilation Pipeline</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     The compiler follows a complete multi-stage pipeline: Input C subset → Lexical Analyzer (Flex) → Tokens → 
                     Parser (ANTLR4) → Abstract Syntax Tree → Symbol Table Construction → Semantic Analysis & Intermediate Code 
                     Generation → x86 Assembly Output. Each stage is modular and handles specific aspects of the compilation process, 
@@ -59,7 +59,7 @@ export default function Compiler() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Key Features</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     The compiler includes a modern C++ symbol table implementation, lexical analysis using Flex, parsing with 
                     ANTLR4's C++ implementation, intermediate code generation using ANTLR visitors, and final code output in 
                     x86 Assembly. The generated .asm files are executable in emulators like EMU8086 and DOSBox, making it a 
@@ -67,7 +67,7 @@ export default function Compiler() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Example Transformation</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     A simple C-like program with variable declarations and arithmetic operations gets transformed through the 
                     entire pipeline. For instance, a program declaring integers and performing addition gets converted to 
                     proper x86 assembly with stack management, register operations, and system calls for output. This 
@@ -75,7 +75,7 @@ export default function Compiler() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Learning Outcomes</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     This project taught me to implement a multi-stage compiler using real industry tools. I learned about 
                     designing grammar rules and resolving ambiguities, managing memory and scopes using custom symbol tables, 
                     generating working 8086 assembly code for real emulators, and writing automation scripts to streamline 
@@ -84,7 +84,7 @@ export default function Compiler() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Technical Challenges</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Building this compiler involved several complex challenges: integrating Flex and ANTLR4 in a seamless 
                     workflow, implementing proper symbol table management with scope handling, generating correct x86 assembly 
                     with proper stack management and register allocation, and ensuring the output assembly runs correctly on 

@@ -24,7 +24,7 @@ export default function AjkeKiKorbo() {
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/AjkeKiKorbo" className='my-btns-2 md:hidden block'>Github</a>
                         </div>
 
-                        <p className='text-2 pb-5'>
+                        <p className='text-2 pb-5 pr-2'>
                             AjkeKiKorbo is a day planner app which lets you plan your days and complete your tasks easily.
                             It also tracks your progress and shows you how you've been doing.
                             This was my first deployed and production-ready app.
@@ -51,14 +51,14 @@ export default function AjkeKiKorbo() {
                     <a target='_blank' rel='noopener noreferrer' href="https://ajkekikorbo.pythonanywhere.com/" className='my-btns-2 md:hidden block'>Live</a>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/AjkeKiKorbo" className='my-btns-2 md:hidden block'>Github</a>
                 </div>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     AjkeKiKorbo is a day planner app which lets you plan your days and complete your tasks easily.
                     It also tracks your progress and shows you how you've been doing.
                     This was my first deployed and production-ready app.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Used</p>
-                <p className='text-2 pb-5'>Django, Jinja, Vanilla JS, Chart JS, HTML, CSS, Bootstrap, Github.</p>
+                <p className='text-2 pb-5 pr-2'>Django, Jinja, Vanilla JS, Chart JS, HTML, CSS, Bootstrap, Github.</p>
 
                 <p className='text-3 py-2'>&gt;_Gallery</p>
                 <div>
@@ -66,17 +66,17 @@ export default function AjkeKiKorbo() {
                 </div>
 
                 <p className='text-3 py-2'>&gt;_Challenges and What I Learned</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     There were quite a lot of challenges and I learned a lot honestly from this project.
                     Making this application responsive was one hell of a job. Since this is a todo app and
                     it tracks your progress flawlessly, being accurate with timezones was a hectic challenge
                     for me to overcome. I took leverage of Python's Calender, Datetime, pytz modules to come
                     up with solutions so that anyone, from any timezone can use this app.
                 </p>
-                <p className='text-2 pb-5'>This was my first time working with graph so it was a good
+                <p className='text-2 pb-5 pr-2'>This was my first time working with graph so it was a good
                     challenge and a lot of fun to be able to implement Chart JS properly.
                 </p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     I learned how to make custom 404 error pages. Since this was my first deployed app,
                     I learned so much about databases, deployment and so on. I had to make this app as efficient
                     as possible so users could read from and write to the database without any hassle.

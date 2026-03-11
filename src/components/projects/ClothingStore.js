@@ -28,7 +28,7 @@ export default function ClothingStore() {
                             <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 md:hidden block'>Github-DRF</a>
                         </div>
 
-                        <p className='text-2 pb-5'>
+                        <p className='text-2 pb-5 pr-2'>
                             This is an online store for a local clothing brand. It has most of the modern E-commerce features
                             such as payment integration, three-layer authorization etc.
                         </p>
@@ -56,13 +56,13 @@ export default function ClothingStore() {
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-React' className='my-btns-2 md:hidden block'>Github-React</a>
                     <a target='_blank' rel='noopener noreferrer' href='https://github.com/mehedikhan72/Ecommerce-API' className='my-btns-2 md:hidden block'>Github-DRF</a>
                 </div>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     This is an online store for a local clothing brand. It has most of the modern E-commerce features
                     such as payment integration, three-layer authorization etc.
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Tech Used</p>
-                <p className='text-2 pb-5'>Django rest framework, React, JWT Authentication, tailwindCSS, SSLcommerz, axios etc</p>
+                <p className='text-2 pb-5 pr-2'>Django rest framework, React, JWT Authentication, tailwindCSS, SSLcommerz, axios etc</p>
 
                 <p className='text-3 py-2'>&gt;_Gallery</p>
                 <div>
@@ -70,16 +70,16 @@ export default function ClothingStore() {
                 </div>
 
                 <p className='text-3 py-2'>&gt;_Challenges and What I Learned</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Two of the biggest challenges in this project were integrating payment system and
                     multiple layer authorization. I had to figure things out as I progressed with the
                     project and finally those obstacles were overcome.
                 </p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     I learned to make API calls effectively with axios, learned to use React
                     more efficiently and applied many industry practices.
                 </p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     I also designed and developed the store so that the store could maximize its profits.
                 </p>
 

@@ -22,7 +22,7 @@ export default function Therap2024() {
                             <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/pathfinder-api" className='my-btns-2 md:hidden block'>Github</a>
                         </div>
 
-                        <p className='text-2 pb-5'>
+                        <p className='text-2 pb-5 pr-2'>
                             Achieved top 10 finalist position among 1300+ participants at Therap JavaFest 2024. 
                             Built a comprehensive personalized mentorship platform with advanced features including 
                             session booking, real-time chat, payment integration, and AI-powered recommendations. 
@@ -48,7 +48,7 @@ export default function Therap2024() {
                 <div className='flex justify-start items-center text-4'>
                     <a target='_blank' rel='noopener noreferrer' href="https://github.com/mehedikhan72/pathfinder-api" className='my-btns-2 md:hidden block'>Github</a>
                 </div>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Achieved top 10 finalist position among 1300+ participants at Therap JavaFest 2024. 
                     Built a comprehensive personalized mentorship platform with advanced features including 
                     session booking, real-time chat, payment integration, and AI-powered recommendations. 
@@ -56,10 +56,10 @@ export default function Therap2024() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Platform Features</p>
-                <p className='text-2 pb-5'>Our mentorship platform included comprehensive session booking systems, real-time chat functionality for seamless communication, integrated payment processing, AI-powered recommendation engine using Recombee for personalized mentor-mentee matching, and ChatGPT integration for enhanced user assistance and automated support features.</p>
+                <p className='text-2 pb-5 pr-2'>Our mentorship platform included comprehensive session booking systems, real-time chat functionality for seamless communication, integrated payment processing, AI-powered recommendation engine using Recombee for personalized mentor-mentee matching, and ChatGPT integration for enhanced user assistance and automated support features.</p>
 
                 <p className='text-3 py-2'>&gt;_Technical Architecture</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Built using Spring Boot framework with a robust Java ecosystem backend. Implemented CI/CD pipelines 
                     for automated deployment and testing. The system was designed to be production-ready with scalable 
                     architecture, comprehensive error handling, and optimized database queries. We focused on creating 
@@ -72,7 +72,7 @@ export default function Therap2024() {
                 </div>
 
                 <p className='text-3 py-2'>&gt;_Competition Journey</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     Competing alongside my teammate Mustafa Muhaimin, we progressed through multiple rounds among 1300+ 
                     participants nationwide. Our innovative approach to personalized mentorship and robust technical 
                     implementation earned us a spot in the top 10 finalists. We were invited to present our solution 
@@ -80,7 +80,7 @@ export default function Therap2024() {
                 </p>
 
                 <p className='text-3 py-2'>&gt;_Key Learnings</p>
-                <p className='text-2 pb-5'>
+                <p className='text-2 pb-5 pr-2'>
                     This competition was instrumental in deepening our understanding of the Spring Boot framework and 
                     the broader Java ecosystem. We gained hands-on experience with enterprise-level development practices, 
                     microservices architecture, and production deployment strategies. Working with recommendation systems 
