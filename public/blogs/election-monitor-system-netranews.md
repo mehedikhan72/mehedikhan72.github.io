@@ -2,7 +2,7 @@
 title: Building a live election monitoring system for Netra News
 slug: election-monitor-system-netranews
 date: "2026-03-11"
-category: "technology"
+category: "technical"
 excerpt: "In February 2026, I worked with Netra News to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large."
 ---
 
