@@ -6,7 +6,7 @@ category: "technology"
 excerpt: "In February 2026, I worked with Netra News to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large."
 ---
 
-[0% AI use for this article - not even revisions. Let's take back control where it matters the most - creative fields]
+_[0% AI use for this article - not even revisions. Let's take back control where it matters the most - creative fields]_
 
 How would you design a software system where the max potential load is roughly 75 million -130 million (estimated internet users in Bangladesh) users in the span of a few hours, and downtime was unaffordable?
 
