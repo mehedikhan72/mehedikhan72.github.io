@@ -11,6 +11,10 @@ import { useRef } from "react";
 import Experience from "../components/Experience";
 import AwardAndAchievements from "../components/AwardAndAchievements";
 
+function SectionDivider() {
+  return <div className="h-1 w-full bg-primary/30 mx-auto my-8" />;
+}
+
 function HomePage() {
   const about = useRef(null);
   const experience = useRef(null);
@@ -32,9 +36,13 @@ function HomePage() {
       <Hero />
       <About aboutRef={about} />
       <Experience experienceRef={experience}/>
+      <SectionDivider />
       <AwardAndAchievements awardsRef={awards} />
+      <SectionDivider />
       <Skills skillsRef={skills} />
+      <SectionDivider />
       <Projects projectsRef={projects} />
+      <SectionDivider />
       <Contact contactRef={contact} />
       <Footer />
     </div>

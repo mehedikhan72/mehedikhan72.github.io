@@ -47,10 +47,10 @@ export default function Images(props) {
     }, [currentIndex])
 
     return (
-        <div className='my-10'>
+        <div className='my-10 flex justify-center'>
             {images.length !== 0 && <div
-                className={!detailed ? 'h-[250px] sm:h-[400px] md:h-[500px] lg:h-[700px] w-screen xl:w-[650px] xl:h-[400px] object-cover relative group px-4' :
-                    'h-[200px] sm:h-[400px] md:h-[500px] lg:h-[700px] xl:h-[900px] 2xl:h-[1080px] object-cover relative group md:p-5 xl:p-10'}
+                className={!detailed ? 'aspect-video w-screen md:w-[60vw] lg:w-[50vw] xl:w-[650px] object-cover relative group px-4' :
+                    'aspect-video w-screen md:w-[60vw] lg:w-[50vw] object-cover relative group md:p-5 xl:p-10'}
             >
                 <div style={{ backgroundImage: `url(${`${images[currentIndex]}`})` }} className='w-full h-full rounded-lg bg-center bg-cover duration-500'></div>
                 <div>
