@@ -1,0 +1,16 @@
+{% assign item = include.item %}
+<div class="entry-row">
+  {% if item.image %}
+  <div class="entry-row__thumb">
+    <a href="{{ item.url | relative_url }}">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" loading="lazy">
+    </a>
+  </div>
+  {% endif %}
+  <div class="entry-row__body">
+    <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    {% if item.meta %}<div class="entry-row__meta">{{ item.meta }}</div>{% endif %}
+    {% include link-list.html links=item.links page_url=item.url %}
+    {% if item.blurb %}<p class="entry-row__blurb">{{ item.blurb }}</p>{% endif %}
+  </div>
+</div>

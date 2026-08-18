@@ -1,0 +1,21 @@
+# Joins and awards only, per project scope. Newest first.
+# OPEN ITEM: exact months for the VIP Cup win, the Poridhi hackathon and Therap
+# JavaFest are not confirmed in source material — verify before publishing.
+- date: "April 2026"
+  text: "Joined CreateBud, Inc. as a part-time AI Engineer."
+  url: https://www.createbudinc.com/
+- date: "November 2025"
+  text: "Joined Sysmodeler.ai as a Research Assistant."
+  url: https://sysmodeler.ai/
+- date: "September 2025"
+  text: "Team NeuronX won the IEEE ICIP 2025 VIP Cup; presented in Anchorage, Alaska."
+  url: https://2025.ieeeicip.org/ieee-sps-video-and-image-processing-cup/
+- date: "December 2024"
+  text: "Joined Systemica Institut as a Backend Engineer."
+  url: https://systemica-institut.de/
+- date: "2025"
+  text: "Champions, AI Engineering Hackathon (poridhi.io × Brain Station 23)."
+- date: "May 2024"
+  text: "Became Technical Committee Chair, IEEE CS BUET SBC."
+- date: "2024"
+  text: "Top 10 finalist, Therap JavaFest 2024."

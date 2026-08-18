@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<a class="back-link" href="{{ '/' | relative_url }}">&larr; Back</a>
+
+<div class="blog-hero">
+  <h1>Writings</h1>
+  <p>Thoughts on software engineering, research and occasional travel stories.</p>
+</div>
+
+<div class="blog-controls">
+  <input type="search" id="blog-search" placeholder="Search by title or topic...">
+  <button type="button" class="filter-btn active" data-category="all">All</button>
+  <button type="button" class="filter-btn" data-category="travel">Travel</button>
+  <button type="button" class="filter-btn" data-category="technical">Technical</button>
+</div>
+
+<div id="post-list">
+  {% assign posts = site.posts | sort: "date" | reverse %}
+  {% for post in posts %}
+  <div class="post-card" data-category="{{ post.category }}" data-title="{{ post.title | downcase }}">
+    {% if post.image %}
+    <div class="post-card__thumb">
+      <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy"></a>
+    </div>
+    {% endif %}
+    <div class="post-card__body">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <div class="post-card__meta">{{ post.date | date: "%B %-d, %Y" }} · {{ post.category | capitalize }}</div>
+      <p class="post-card__excerpt">{{ post.excerpt }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="empty-state" id="empty-state" style="display:none;">No results found.</div>
+
+<script>
+(function () {
+  var search = document.getElementById('blog-search');
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.post-card');
+  var empty = document.getElementById('empty-state');
+  var activeCategory = 'all';
+
+  function applyFilters() {
+    var term = search.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function (card) {
+      var matchesCategory = activeCategory === 'all' || card.dataset.category === activeCategory;
+      var matchesTerm = term === '' || card.dataset.title.indexOf(term) !== -1;
+      var show = matchesCategory && matchesTerm;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    empty.style.display = visible === 0 ? '' : 'none';
+    empty.textContent = term ? 'No results found for "' + search.value.trim() + '"' : 'No articles in this category';
+  }
+
+  search.addEventListener('input', applyFilters);
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeCategory = btn.dataset.category;
+      applyFilters();
+    });
+  });
+})();
+</script>

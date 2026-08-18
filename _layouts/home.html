@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<h1>{{ site.name }}</h1>
+
+<div class="intro">
+  <div class="intro__text">
+    {{ site.data.intro.bio | markdownify }}
+  </div>
+  <div class="intro__photo">
+    <img src="{{ site.data.intro.photo | relative_url }}" alt="{{ site.name }}">
+  </div>
+</div>
+
+<div class="link-row">
+  <a href="mailto:{{ site.data.social.email }}">Email</a> /
+  <a href="{{ site.data.social.github }}" target="_blank" rel="noopener">GitHub</a> /
+  <a href="{{ site.data.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> /
+  <a href="{{ site.data.social.blogs | relative_url }}">Blogs</a> /
+  <a href="{{ site.data.social.resume | relative_url }}" target="_blank">Resume</a>
+</div>
+
+<div class="section" id="news">
+  <h2>News</h2>
+  <ul class="news-list">
+    {% for n in site.data.news %}
+    <li><strong>{{ n.date }}</strong> - {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="section" id="education">
+  <h2>Education</h2>
+  <div class="education">
+    <div class="education__degree">{{ site.data.education.degree }}</div>
+    <div class="education__org"><a href="{{ site.data.education.org_url }}" target="_blank" rel="noopener">{{ site.data.education.org }}</a></div>
+    <div class="education__loc">{{ site.data.education.location }}</div>
+    <div class="education__courses">
+      - Notable Courses: {{ site.data.education.courses | join: "; " }}
+      {% if site.data.education.other_courses %}<br>- Other Courses: {{ site.data.education.other_courses | join: ", " }}{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="section" id="research">
+  <h2>Research</h2>
+  {% assign research_items = site.research | sort: "order" %}
+  {% for item in research_items %}
+    {% include entry-row.html item=item %}
+  {% endfor %}
+</div>
+
+<div class="section" id="work-experience">
+  <h2>Work Experience</h2>
+  {% for role in site.data.work %}
+    {% include role-block.html item=role %}
+  {% endfor %}
+</div>
+
+<div class="section" id="achievements">
+  <h2>Achievements</h2>
+  {% assign achievement_items = site.achievements | sort: "order" %}
+  {% for item in achievement_items %}
+    {% include entry-row.html item=item %}
+  {% endfor %}
+  <p class="entry-row__blurb">Team NeuronX also won the <a href="/research/vip-cup-drone-detection/">IEEE ICIP 2025 VIP Cup</a> for real-time multimodal drone detection — see the <a href="/research/vip-cup-drone-detection/">research entry</a>.</p>
+</div>
+
+<div class="section" id="skills">
+  <h2>Skills</h2>
+  <p class="skills-intro">{{ site.data.skills_intro }}</p>
+  <div class="skills-table">
+    {% for row in site.data.skills %}
+    <div class="skills-table__row">
+      <div class="skills-table__label">{{ row.label }}</div>
+      <div class="skills-table__items">{{ row.items }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section" id="projects">
+  <h2>Projects</h2>
+  {% assign project_items = site.projects | sort: "order" %}
+  {% for item in project_items %}
+    {% include entry-row.html item=item %}
+  {% endfor %}
+</div>
+
+<div class="section" id="eca">
+  <h2>ECA</h2>
+  {% for role in site.data.eca %}
+    {% include role-block.html item=role %}
+  {% endfor %}
+
+  <div class="mentoring">
+    <h3>Mentoring</h3>
+    <div>{{ site.data.mentoring.bio | markdownify }}</div>
+  </div>
+</div>

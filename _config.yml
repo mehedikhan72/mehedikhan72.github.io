@@ -1,0 +1,80 @@
+title: Mehedi Khan
+name: Mehedi Khan
+description: "Software Engineer. Distributed Systems, ML Systems, Applied AI."
+url: "https://mehedikhan.me"
+baseurl: ""
+
+author: Mehedi Khan
+email: mehedi.72.khan@gmail.com
+image: /assets/img/og-image.png
+twitter:
+  card: summary_large_image
+logo: /assets/img/og-image.png
+
+permalink: /blogs/:title/
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  achievements:
+    output: true
+    permalink: /achievements/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-image.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: detail
+      section: research
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: detail
+      section: projects
+  - scope:
+      path: ""
+      type: achievements
+    values:
+      layout: detail
+      section: achievements
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+include:
+  - .nojekyll
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _make_thumbnails.sh
+  - README.md
+  - vendor
+  - node_modules
+  - "*.original.md"

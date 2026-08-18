@@ -1,0 +1,373 @@
+// Jon Barron / Leonid Keselman academic-page look, ported to flex/grid.
+// Palette and type scale are pixel-faithful to the reference: Lato 16px body,
+// links #1772d0 -> #f09228 on hover, headings display:inline like the original tables.
+
+$link: #1772d0;
+$link-hover: #f09228;
+$text: #222;
+$muted: #444;
+$date: darkgreen;
+$role: darkblue;
+$highlight: #ffffd0;
+$max-width: 800px;
+
+$font-body: 'Lato', 'Noto Sans Bengali', Verdana, Helvetica, sans-serif;
+
+body {
+  font-family: $font-body;
+  font-size: 16px;
+  line-height: 1.55;
+  color: $text;
+  background: #fff;
+}
+
+a {
+  color: $link;
+  &:hover, &:focus { color: $link-hover; }
+}
+
+strong, b { font-weight: 700; }
+
+h1 {
+  font-family: $font-body;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 14px 0;
+}
+
+h2 {
+  font-family: $font-body;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline;
+}
+
+h3 {
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline;
+}
+
+span.highlight { background-color: $highlight; }
+
+.page {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 40px 2.5% 60px;
+}
+
+// ---- Section wrapper ----
+.section {
+  margin-bottom: 36px;
+
+  > h2 {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+
+// ---- Intro ----
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  margin-bottom: 8px;
+
+  &__text { flex: 1 1 60%; }
+
+  &__photo {
+    flex: 0 0 34%;
+    max-width: 34%;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  p { margin-bottom: 14px; }
+}
+
+.link-row {
+  text-align: center;
+  margin: 20px 0 8px;
+
+  a { margin: 0 6px; }
+  span.sep { color: $muted; }
+}
+
+// ---- News ----
+.news-list {
+  li { margin-bottom: 6px; }
+}
+
+// ---- Education ----
+.education {
+  &__degree { font-weight: 400; }
+  &__org { margin-top: 2px; }
+  &__loc { color: $muted; margin-bottom: 8px; }
+  &__courses { margin-top: 8px; }
+}
+
+// ---- Role block (work / ECA) ----
+.role-block {
+  margin-bottom: 22px;
+
+  &:last-child { margin-bottom: 0; }
+
+  &__title { color: $role; }
+  &__dates { color: $date; font-style: italic; font-weight: 700; margin-left: 6px; }
+  &__org { margin-top: 2px; }
+  &__loc { color: $muted; }
+
+  ul {
+    margin-top: 6px;
+    li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 4px;
+
+      &::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
+.mentoring {
+  margin-top: 26px;
+
+  h3 { display: block; margin-bottom: 8px; }
+}
+
+// ---- Entry row (research / projects / achievements) ----
+.entry-row {
+  display: flex;
+  gap: 4%;
+  margin-bottom: 30px;
+
+  &:last-child { margin-bottom: 0; }
+
+  &__thumb {
+    flex: 0 0 25%;
+    max-width: 25%;
+    min-width: 110px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__body { flex: 1 1 auto; }
+
+  &__meta { color: $muted; margin: 2px 0 6px; }
+  &__links { margin-bottom: 8px; }
+  &__blurb { margin-top: 4px; }
+}
+
+// ---- Skills ----
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  &__row {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+
+    &:last-child { border-bottom: none; }
+  }
+
+  &__label {
+    flex: 0 0 28%;
+    font-weight: 700;
+  }
+
+  &__items { flex: 1 1 auto; color: $muted; }
+}
+
+.skills-intro { margin-bottom: 16px; color: $muted; }
+
+// ---- Footer ----
+.site-footer {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 20px 2.5% 60px;
+  text-align: center;
+  color: $muted;
+  font-size: 14px;
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 14px;
+
+    svg { width: 22px; height: 22px; fill: $muted; transition: fill .15s ease; }
+    a:hover svg { fill: $link-hover; }
+  }
+
+  .credit { margin-top: 6px; }
+}
+
+// ---- Detail pages ----
+.detail-header {
+  margin-bottom: 24px;
+
+  h1 { text-align: left; font-size: 28px; }
+  .detail-meta { color: $muted; margin: 6px 0 10px; }
+  .back-link { display: inline-block; margin-bottom: 18px; }
+}
+
+.detail-body {
+  h3 {
+    display: block;
+    margin: 26px 0 8px;
+    color: $role;
+  }
+  p { margin-bottom: 14px; }
+  ul, ol { margin: 0 0 14px 20px; list-style: disc; }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+}
+
+// ---- Blog index ----
+.blog-hero {
+  margin-bottom: 24px;
+  h1 { text-align: left; }
+  p { color: $muted; margin-top: 6px; }
+}
+
+.blog-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+
+  input[type="search"] {
+    flex: 1 1 220px;
+    font-family: $font-body;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .filter-btn {
+    font-family: $font-body;
+    font-size: 14px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: $text;
+
+    &.active {
+      background: $link;
+      border-color: $link;
+      color: #fff;
+    }
+  }
+}
+
+.post-card {
+  display: flex;
+  gap: 4%;
+  margin-bottom: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #eee;
+
+  &:last-child { border-bottom: none; }
+
+  &__thumb {
+    flex: 0 0 25%;
+    max-width: 25%;
+    img { width: 100%; height: auto; display: block; border-radius: 4px; }
+  }
+
+  &__body { flex: 1 1 auto; }
+  &__meta { color: $muted; font-size: 14px; margin: 2px 0 6px; }
+  &__excerpt { color: $muted; }
+}
+
+.empty-state { color: $muted; padding: 20px 0; }
+
+// ---- Blog post ----
+.post-header {
+  margin-bottom: 24px;
+  h1 { text-align: left; }
+  .post-meta { color: $muted; margin-top: 6px; }
+}
+
+.post-body {
+  img { max-width: 100%; height: auto; border-radius: 4px; margin: 16px 0; }
+  p { margin-bottom: 16px; }
+  h2, h3 { display: block; margin: 24px 0 10px; }
+  blockquote {
+    border-left: 3px solid #eee;
+    padding-left: 14px;
+    color: $muted;
+    margin: 16px 0;
+  }
+  pre {
+    overflow-x: auto;
+    padding: 12px;
+    background: #f7f7f7;
+    border-radius: 4px;
+  }
+  code { font-size: 14px; }
+}
+
+.share-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+
+  .share-label { color: $muted; font-size: 14px; margin-right: 4px; }
+
+  button, a.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: $muted;
+
+    svg { width: 16px; height: 16px; fill: currentColor; }
+
+    &:hover { border-color: $link-hover; color: $link-hover; }
+  }
+
+  .toast {
+    font-size: 13px;
+    color: $muted;
+    opacity: 0;
+    transition: opacity .2s ease;
+    &.visible { opacity: 1; }
+  }
+}
+
+.back-link { display: inline-block; margin-bottom: 18px; }

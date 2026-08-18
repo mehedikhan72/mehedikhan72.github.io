@@ -1,0 +1,25 @@
+degree: "Bachelor of Science (BSc. Engg.) in Computer Science and Engineering [2021 - 2027 (expected)]"
+org: "Bangladesh University of Engineering and Technology (BUET)"
+org_url: "https://www.buet.ac.bd/"
+location: "Dhaka, Bangladesh"
+courses:
+  - Machine Learning
+  - Compiler
+  - Operating System
+  - Computer Networks
+  - Artificial Intelligence
+  - Computer Architecture
+  - Microprocessors, Microcontrollers & Embedded Systems
+  - Data Structures & Algorithms
+  - Database
+  - Theory of Computation
+  - Software Engineering
+  - Digital Logic Design
+  - Data Communication
+  - Information Systems Development & Management
+  - Signals & Linear Systems
+  - Probability & Statistics
+other_courses:
+  - CS50X
+  - CS50W
+  - CS50AI

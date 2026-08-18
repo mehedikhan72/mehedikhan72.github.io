@@ -1,0 +1,49 @@
+// Barron's original is a fixed 800px table with no mobile handling.
+// This is the deliberate deviation: iPad and phone need to work.
+
+@media (max-width: 768px) {
+  .page { padding: 24px 20px 48px; }
+  .site-footer { padding: 16px 20px 48px; }
+
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+
+  .intro {
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    &__text, &__photo { flex: 1 1 100%; max-width: 100%; }
+    &__photo { max-width: 200px; margin: 0 auto; }
+  }
+
+  .entry-row {
+    flex-direction: column;
+    gap: 12px;
+
+    &__thumb { max-width: 100%; flex-basis: auto; }
+  }
+
+  .role-block__title,
+  .role-block__dates { display: block; margin-left: 0; }
+
+  .skills-table__row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .skills-table__label { flex-basis: auto; }
+
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+
+  .post-card {
+    flex-direction: column;
+
+    &__thumb { max-width: 100%; }
+  }
+
+  .blog-controls { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 480px) {
+  .gallery { grid-template-columns: 1fr; }
+  h1 { font-size: 22px; }
+}

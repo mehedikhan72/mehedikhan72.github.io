@@ -1,0 +1,14 @@
+- label: Languages
+  items: "C, C++, Python, Java, JavaScript, TypeScript, Go"
+- label: Backend
+  items: "Distributed Systems, Microservices, REST, gRPC, FastAPI, Django REST Framework, Spring Boot, Flask"
+- label: AI/ML
+  items: "PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, nltk"
+- label: Databases
+  items: "PostgreSQL, MySQL, Redis, DragonflyDB"
+- label: Cloud & DevOps
+  items: "AWS, DigitalOcean, Docker, Kubernetes, Terraform, GitHub Actions, Cloudflare"
+- label: Frontend
+  items: "React, Next.js, TypeScript, Tailwind CSS, Bootstrap, HTML/CSS, Chart.js"
+- label: Tools
+  items: "Git, Postman, Wireshark, Firebase"

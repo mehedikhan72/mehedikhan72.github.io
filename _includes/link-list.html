@@ -1,0 +1,7 @@
+{% assign links = include.links %}
+{% if links and links.size > 0 %}
+<div class="entry-row__links">
+  {% for l in links %}{% if l.url == "self" %}<a href="{{ include.page_url }}">{{ l.label }}</a>{% else %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endif %} /
+  {% endfor %}
+</div>
+{% endif %}
