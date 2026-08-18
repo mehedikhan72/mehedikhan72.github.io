@@ -71,7 +71,7 @@ span.highlight { background-color: $highlight; }
 // ---- Intro ----
 .intro {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 4%;
   margin-bottom: 8px;
 
@@ -83,7 +83,8 @@ span.highlight { background-color: $highlight; }
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
   }
