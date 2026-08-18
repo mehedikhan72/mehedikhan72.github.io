@@ -1,5 +1,5 @@
 # Newest first.
-- title: "IEEE ICIP 2025 VIP Cup — Champions"
+- title: "IEEE ICIP 2025 VIP Cup - Champions"
   context: "Real-time multimodal drone detection"
   year: 2025
   image: /assets/img/ieeevipcup2025champions.webp
@@ -8,13 +8,13 @@
     - label: "Competition"
       url: https://2025.ieeeicip.org/ieee-sps-video-and-image-processing-cup/
   blurb: >
-    Team NeuronX — me, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib and Ruwad Naswan — won
+    Team NeuronX - me, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib and Ruwad Naswan - won
     the IEEE ICIP 2025 VIP Cup among 40+ international teams, building fusion pipelines for real-time
     multimodal (RGB + infrared) drone detection, tracking and payload classification under fog,
     occlusion and thermal-contrast gaps. Supervised by Prof. Dr. Shamsuzzoha Bayzid, with graduate
     tutor Asib Rahman. I presented our solution live at ICIP 2025 in Anchorage, Alaska.
 
-- title: "AI Engineering Hackathon — Champions"
+- title: "AI Engineering Hackathon - Champions"
   context: "poridhi.io × Brain Station 23"
   year: 2025
   image: /assets/img/poridhi2025.webp
@@ -25,10 +25,10 @@
   blurb: >
     Team BUET XFACTOR won the AI Engineering Hackathon (poridhi.io × Brain Station 23) among 86 teams
     and 300+ participants, building a multilingual intent-based search system with a 500ms average
-    response time — without a GPU, using only half the provided compute (10 of 20 VMs) via in-memory
+    response time - without a GPU, using only half the provided compute (10 of 20 VMs) via in-memory
     llama.cpp inference and 4-bit quantization.
 
-- title: "Therap JavaFest 2024 — Top 10 Finalist"
+- title: "Therap JavaFest 2024 - Top 10 Finalist"
   context: "Therap BD Limited"
   year: 2024
   image: /assets/img/therap2024.webp
@@ -38,6 +38,6 @@
       url: https://github.com/mehedikhan72/pathfinder-api
   blurb: >
     Top 10 finalist among 1300+ participants at Therap JavaFest 2024 with Mustafa Muhaimin, building a
-    Spring Boot mentorship platform — session booking, real-time chat, payment integration, and
+    Spring Boot mentorship platform - session booking, real-time chat, payment integration, and
     AI-powered mentor matching via Recombee and ChatGPT. Invited to present at the grand finale at
     Therap BD Limited headquarters.

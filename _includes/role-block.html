@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 <div class="role-block">
   <span class="role-block__title">{{ item.title }}</span>
-  <span class="role-block__dates">[{{ item.dates }}]</span>
+  {% if item.dates %}<span class="role-block__dates">[{{ item.dates }}]</span>{% endif %}
   {% if item.org %}
   <div class="role-block__org">
     {% if item.org_url %}<a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}

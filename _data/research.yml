@@ -1,6 +1,6 @@
 items:
   - title: "Real-Time Multimodal Drone Detection, Tracking and Payload Classification"
-    meta: "Mehedi Khan, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib, Ruwad Naswan · IEEE ICIP 2025 VIP Cup — Champions · 2025"
+    meta: "Mehedi Khan, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib, Ruwad Naswan · IEEE ICIP 2025 VIP Cup - Champions · 2025"
     image: /assets/img/ieeevipcup2025champions.webp
     links:
       - label: "Competition"
@@ -13,7 +13,7 @@ items:
 
 thesis: >
   My undergraduate thesis explores citation faithfulness in LLMs, using reinforcement learning and
-  inference-time methods — rather than further training — to make models more faithful to their
+  inference-time methods - rather than further training - to make models more faithful to their
   cited sources while keeping compute costs down.
 
 interests: >

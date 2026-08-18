@@ -9,7 +9,7 @@
       url: /blogs/election-monitor-system-netranews/
   blurb: >
     Systems, backend and infrastructure lead for Netra News' live election monitoring platform
-    covering Bangladesh's 2026 national election — 300 constituencies, ~43,000 polling stations.
+    covering Bangladesh's 2026 national election - 300 constituencies, ~43,000 polling stations.
     Built as a static Next.js site using Incremental Static Regeneration, triggered by authenticated
     webhooks on each result entry, backed by a FastAPI monolith and a PostgreSQL primary/replica pair
     with two-layer connection pooling. Deployed on a DigitalOcean Kubernetes cluster behind Cloudflare
@@ -25,9 +25,9 @@
     - label: "Github"
       url: https://github.com/mehedikhan72/CSE310-Compiler
   blurb: >
-    A full compiler for a subset of C, built for CSE310: Compiler Design. Complete pipeline — Flex
+    A full compiler for a subset of C, built for CSE310: Compiler Design. Complete pipeline - Flex
     lexical analysis, ANTLR4 parsing, a custom C++ symbol table, semantic analysis and
-    intermediate-code generation via ANTLR visitors — down to x86 assembly that runs on EMU8086 and
+    intermediate-code generation via ANTLR visitors - down to x86 assembly that runs on EMU8086 and
     DOSBox.
 
 - title: "Vehicle Buy/Sell Platform"
@@ -39,7 +39,7 @@
     - label: "Live Site"
       url: https://www.chaarchakka.com
   blurb: >
-    A buy/sell marketplace for new and used vehicles, built for a client with a friend — I owned the
+    A buy/sell marketplace for new and used vehicles, built for a client with a friend - I owned the
     entire backend. Django REST Framework, React and TypeScript, JWT auth, hosted on DigitalOcean;
     continuous client revisions were a good lesson in production-grade scaling and client handling.
 
@@ -56,7 +56,7 @@
     - label: "Github-API"
       url: https://github.com/mehedikhan72/TreasureKoii-Api
   blurb: >
-    A platform for organizing treasure hunts — teams, puzzles, real-time leaderboards and
+    A platform for organizing treasure hunts - teams, puzzles, real-time leaderboards and
     announcements. Built with Django REST Framework, React and TypeScript; my first SaaS product and
     my first app used by many people concurrently, which meant learning production-level debugging
     under real load.
@@ -73,7 +73,7 @@
       url: https://github.com/mehedikhan72/Ecommerce-API
   blurb: >
     An online store for a local clothing brand with payment integration (SSLCommerz) and three-layer
-    authorization. Django REST Framework, React, JWT auth, tailwindCSS — the two hardest parts were
+    authorization. Django REST Framework, React, JWT auth, tailwindCSS - the two hardest parts were
     the payment integration and the multi-layer auth.
 
 - title: "TravelMedia"
@@ -89,7 +89,7 @@
   blurb: >
     A social media app for posting and reviewing trips, with real-time notifications, Google/social
     auth and websockets via Django Channels. My first DRF + React project and the most technically
-    demanding one — I learned tokens, OAuth, and how websockets actually work.
+    demanding one - I learned tokens, OAuth, and how websockets actually work.
 
 - title: "AjkeKiKorbo"
   context: "Day planner app"
@@ -103,5 +103,5 @@
       url: https://github.com/mehedikhan72/AjkeKiKorbo
   blurb: >
     A day planner and habit tracker with progress charts (Chart.js) and timezone-safe scheduling
-    (Python's calendar/datetime/pytz). My first deployed, production app — taught me environment
+    (Python's calendar/datetime/pytz). My first deployed, production app - taught me environment
     variables, custom 404 pages, and responsive design from scratch.

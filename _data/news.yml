@@ -1,5 +1,5 @@
 # Joins and awards only, per project scope. Newest first.
-# Links are raw HTML anchors on the company/org name only — do not link the whole line.
+# Links are raw HTML anchors on the company/org name only - do not link the whole line.
 - date: "April 2026"
   text: 'Joined <a href="https://www.createbudinc.com/" target="_blank" rel="noopener">CreateBud, Inc.</a> as a part-time AI Engineer.'
 - date: "November 2025"

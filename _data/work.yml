@@ -21,15 +21,15 @@
   org_url: "https://systemica-institut.de/"
   location: "Remote"
   bullets:
-    - "Built a scalable and reliable File Processing API with Python and FastAPI — [Design document](https://docs.google.com/document/d/1OZ9srLVw1oXkLgI46c1VtDezwR2hEHv-OKZ922u0z-w/edit?tab=t.0)"
+    - "Built a scalable and reliable File Processing API with Python and FastAPI - [Design document](https://docs.google.com/document/d/1OZ9srLVw1oXkLgI46c1VtDezwR2hEHv-OKZ922u0z-w/edit?tab=t.0)"
 
 - title: "Software Consultant"
   dates: "2023 - Present"
   bullets:
     - "Consult and build software for small and mid-size businesses"
-    - "Clients include [Netra News](https://www.netra.news/) — see Projects for the election monitoring system I led — as well as [Rantir](https://www.rantir.com/) and [ChaarChakka](https://www.chaarchakka.com)"
+    - "Clients include [Netra News](https://www.netra.news/) - see Projects for the election monitoring system I led - as well as [Rantir](https://www.rantir.com/) and [ChaarChakka](https://www.chaarchakka.com)"
 
 - title: "Open Source Contributor"
   dates: "2023 - 2024"
   bullets:
-    - "Contributed to [Apache Seata](https://github.com/apache/incubator-seata), [Open edX](https://github.com/openedx/edx-platform), [Plone](https://github.com/plone) and others — see [GitHub](https://github.com/mehedikhan72)"
+    - "Contributed to [Apache Seata](https://github.com/apache/incubator-seata), [Open edX](https://github.com/openedx/edx-platform), [Plone](https://github.com/plone) and others - see [GitHub](https://github.com/mehedikhan72)"

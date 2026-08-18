@@ -41,8 +41,10 @@ layout: default
   {% for item in site.data.research.items %}
     {% include entry-row.html item=item %}
   {% endfor %}
-  <p>{{ site.data.research.thesis | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-  <p>{{ site.data.research.interests | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  <ul class="news-list">
+    <li>{{ site.data.research.thesis | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+    <li>{{ site.data.research.interests | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+  </ul>
 </div>
 
 <div class="section" id="work-experience">
@@ -86,10 +88,6 @@ layout: default
     {% for role in site.data.eca %}
     <li>{% include role-block.html item=role %}</li>
     {% endfor %}
+    <li>{% include role-block.html item=site.data.mentoring %}</li>
   </ul>
-
-  <div class="role-block mentoring">
-    <span class="role-block__title">Mentoring</span>
-    <div>{{ site.data.mentoring.bio | markdownify }}</div>
-  </div>
 </div>
