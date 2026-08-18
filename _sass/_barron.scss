@@ -80,6 +80,8 @@ span.highlight { background-color: $highlight; }
   &__photo {
     flex: 0 0 41%;
     max-width: 41%;
+    padding: 10px 0;
+    box-sizing: border-box;
 
     img {
       width: 100%;
