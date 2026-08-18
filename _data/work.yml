@@ -7,17 +7,6 @@
   bullets:
     - "Working part-time as an AI Engineer at a funded US startup building an AI-literacy residency program for high school students"
 
-- title: "Systems / Backend & Infrastructure Lead"
-  dates: "January 2026 - February 2026"
-  org: "Netra News"
-  org_url: "https://www.netra.news/"
-  location: "Remote"
-  bullets:
-    - "Led systems, backend and infrastructure for the live election monitoring system for the 2026 Bangladesh national election"
-    - "~8M requests served at 100% uptime across 300 constituencies and ~43,000 polling stations"
-    - "FastAPI, PostgreSQL + pgBouncer, Next.js ISR, Kubernetes on DigitalOcean, Cloudflare (WAF, Tunnels), Axiom"
-    - "[Blog post](/blogs/election-monitor-system-netranews/)"
-
 - title: "Research Assistant"
   dates: "November 2025 - February 2026"
   org: "Sysmodeler.ai"
@@ -34,10 +23,11 @@
   bullets:
     - "Built a scalable and reliable File Processing API with Python and FastAPI — [Design document](https://docs.google.com/document/d/1OZ9srLVw1oXkLgI46c1VtDezwR2hEHv-OKZ922u0z-w/edit?tab=t.0)"
 
-- title: "Freelance Developer"
+- title: "Software Consultant"
   dates: "2023 - Present"
   bullets:
-    - "Built applications for small to mid-size businesses; clients include [Netra News](https://www.netra.news/), [Rantir](https://www.rantir.com/) and [ChaarChakka](https://www.chaarchakka.com)"
+    - "Consult and build software for small and mid-size businesses"
+    - "Clients include [Netra News](https://www.netra.news/) — see Projects for the election monitoring system I led — as well as [Rantir](https://www.rantir.com/) and [ChaarChakka](https://www.chaarchakka.com)"
 
 - title: "Open Source Contributor"
   dates: "2023 - 2024"

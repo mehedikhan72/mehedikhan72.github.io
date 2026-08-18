@@ -115,12 +115,16 @@ span.highlight { background-color: $highlight; }
   &__courses { margin-top: 8px; }
 }
 
-// ---- Role block (work / ECA) ----
+// ---- Role list (work / education / ECA) ----
+.role-list {
+  list-style: disc;
+  margin-left: 20px;
+
+  > li { margin-bottom: 22px; }
+  > li:last-child { margin-bottom: 0; }
+}
+
 .role-block {
-  margin-bottom: 22px;
-
-  &:last-child { margin-bottom: 0; }
-
   &__title { color: $role; }
   &__dates { color: $date; font-style: italic; font-weight: 700; margin-left: 6px; }
   &__org { margin-top: 2px; }

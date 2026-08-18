@@ -31,15 +31,9 @@ layout: default
 
 <div class="section" id="education">
   <h2>Education</h2>
-  <div class="education">
-    <div class="education__degree">{{ site.data.education.degree }}</div>
-    <div class="education__org"><a href="{{ site.data.education.org_url }}" target="_blank" rel="noopener">{{ site.data.education.org }}</a></div>
-    <div class="education__loc">{{ site.data.education.location }}</div>
-    <div class="education__courses">
-      - Notable Courses: {{ site.data.education.courses | join: "; " }}
-      {% if site.data.education.other_courses %}<br>- Other Courses: {{ site.data.education.other_courses | join: ", " }}{% endif %}
-    </div>
-  </div>
+  <ul class="role-list">
+    <li>{% include role-block.html item=site.data.education %}</li>
+  </ul>
 </div>
 
 <div class="section" id="research">
@@ -53,9 +47,11 @@ layout: default
 
 <div class="section" id="work-experience">
   <h2>Work Experience</h2>
-  {% for role in site.data.work %}
-    {% include role-block.html item=role %}
-  {% endfor %}
+  <ul class="role-list">
+    {% for role in site.data.work %}
+    <li>{% include role-block.html item=role %}</li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="section" id="achievements">
@@ -86,9 +82,11 @@ layout: default
 
 <div class="section" id="eca">
   <h2>Extracurricular Activities</h2>
-  {% for role in site.data.eca %}
-    {% include role-block.html item=role %}
-  {% endfor %}
+  <ul class="role-list">
+    {% for role in site.data.eca %}
+    <li>{% include role-block.html item=role %}</li>
+    {% endfor %}
+  </ul>
 
   <div class="role-block mentoring">
     <span class="role-block__title">Mentoring</span>
