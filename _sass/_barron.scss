@@ -110,14 +110,6 @@ span.highlight { background-color: $highlight; }
   li { margin-bottom: 6px; }
 }
 
-// ---- Education ----
-.education {
-  &__degree { font-weight: 400; }
-  &__org { margin-top: 2px; }
-  &__loc { color: $muted; margin-bottom: 8px; }
-  &__courses { margin-top: 8px; }
-}
-
 // ---- Role list (work / education / ECA) ----
 .role-list {
   list-style: disc;

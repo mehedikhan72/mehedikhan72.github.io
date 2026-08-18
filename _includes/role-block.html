@@ -2,12 +2,11 @@
 <div class="role-block">
   <span class="role-block__title">{{ item.title }}</span>
   {% if item.dates %}<span class="role-block__dates">[{{ item.dates }}]</span>{% endif %}
-  {% if item.org %}
+  {% if item.org or item.location %}
   <div class="role-block__org">
-    {% if item.org_url %}<a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}
+    {% if item.org_url %}<a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ item.org }}</a>{% elsif item.org %}{{ item.org }}{% endif %}{% if item.org and item.location %} &middot; {% endif %}{% if item.location %}<span class="role-block__loc">{{ item.location }}</span>{% endif %}
   </div>
   {% endif %}
-  {% if item.location %}<div class="role-block__loc">{{ item.location }}</div>{% endif %}
   {% if item.bullets %}
   <ul>
     {% for b in item.bullets %}<li>{{ b | markdownify | remove: '<p>' | remove: '</p>' }}</li>

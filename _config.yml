@@ -7,8 +7,6 @@ baseurl: ""
 author: Mehedi Khan
 email: mehedi.72.khan@gmail.com
 image: /assets/img/og-image.png
-twitter:
-  card: summary_large_image
 logo: /assets/img/og-image.png
 
 permalink: /blogs/:title/
@@ -37,6 +35,7 @@ kramdown:
 
 sass:
   style: compressed
+  sourcemap: never
 
 include:
   - .nojekyll
@@ -44,8 +43,7 @@ include:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - _make_thumbnails.sh
   - README.md
+  - serve.sh
   - vendor
   - node_modules
-  - "*.original.md"
