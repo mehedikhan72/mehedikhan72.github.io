@@ -14,11 +14,10 @@ external links (blog post, code, live site, design doc). Blog posts are Markdown
 ## Local development
 
 ```bash
-bundle install
-bundle exec jekyll serve
+./serve.sh
 ```
 
-Visit `http://localhost:4000`.
+Visit `http://localhost:4000`. (Equivalent to `bundle install && bundle exec jekyll serve`.)
 
 ## Deploy
 
