@@ -24,7 +24,7 @@ layout: default
   <h2>News</h2>
   <ul class="news-list">
     {% for n in site.data.news %}
-    <li><strong>{{ n.date }}</strong> - {% if n.url %}<a href="{{ n.url }}" target="_blank" rel="noopener">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}</li>
+    <li><strong>{{ n.date }}</strong> - {{ n.text }}</li>
     {% endfor %}
   </ul>
 </div>
@@ -44,10 +44,7 @@ layout: default
 
 <div class="section" id="research">
   <h2>Research</h2>
-  {% assign research_items = site.research | sort: "order" %}
-  {% for item in research_items %}
-    {% include entry-row.html item=item %}
-  {% endfor %}
+  <div>{{ site.data.research.bio | markdownify }}</div>
 </div>
 
 <div class="section" id="work-experience">
@@ -59,16 +56,13 @@ layout: default
 
 <div class="section" id="achievements">
   <h2>Achievements</h2>
-  {% assign achievement_items = site.achievements | sort: "order" %}
-  {% for item in achievement_items %}
+  {% for item in site.data.achievements %}
     {% include entry-row.html item=item %}
   {% endfor %}
-  <p class="entry-row__blurb">Team NeuronX also won the <a href="/research/vip-cup-drone-detection/">IEEE ICIP 2025 VIP Cup</a> for real-time multimodal drone detection — see the <a href="/research/vip-cup-drone-detection/">research entry</a>.</p>
 </div>
 
 <div class="section" id="skills">
   <h2>Skills</h2>
-  <p class="skills-intro">{{ site.data.skills_intro }}</p>
   <div class="skills-table">
     {% for row in site.data.skills %}
     <div class="skills-table__row">
@@ -81,20 +75,19 @@ layout: default
 
 <div class="section" id="projects">
   <h2>Projects</h2>
-  {% assign project_items = site.projects | sort: "order" %}
-  {% for item in project_items %}
+  {% for item in site.data.projects %}
     {% include entry-row.html item=item %}
   {% endfor %}
 </div>
 
 <div class="section" id="eca">
-  <h2>ECA</h2>
+  <h2>Extracurricular Activities</h2>
   {% for role in site.data.eca %}
     {% include role-block.html item=role %}
   {% endfor %}
 
-  <div class="mentoring">
-    <h3>Mentoring</h3>
+  <div class="role-block mentoring">
+    <span class="role-block__title">Mentoring</span>
     <div>{{ site.data.mentoring.bio | markdownify }}</div>
   </div>
 </div>

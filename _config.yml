@@ -13,17 +13,6 @@ logo: /assets/img/og-image.png
 
 permalink: /blogs/:title/
 
-collections:
-  research:
-    output: true
-    permalink: /research/:name/
-  projects:
-    output: true
-    permalink: /projects/:name/
-  achievements:
-    output: true
-    permalink: /achievements/:name/
-
 defaults:
   - scope:
       path: ""
@@ -34,24 +23,6 @@ defaults:
       type: posts
     values:
       layout: post
-  - scope:
-      path: ""
-      type: research
-    values:
-      layout: detail
-      section: research
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: detail
-      section: projects
-  - scope:
-      path: ""
-      type: achievements
-    values:
-      layout: detail
-      section: achievements
 
 plugins:
   - jekyll-seo-tag

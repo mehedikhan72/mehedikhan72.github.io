@@ -1,7 +1,0 @@
-{% if include.images and include.images.size > 0 %}
-<div class="gallery">
-  {% for img in include.images %}
-  <img src="{{ img | relative_url }}" alt="{{ include.title }} screenshot" loading="lazy">
-  {% endfor %}
-</div>
-{% endif %}

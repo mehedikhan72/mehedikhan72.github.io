@@ -16,7 +16,7 @@
     - "Led systems, backend and infrastructure for the live election monitoring system for the 2026 Bangladesh national election"
     - "~8M requests served at 100% uptime across 300 constituencies and ~43,000 polling stations"
     - "FastAPI, PostgreSQL + pgBouncer, Next.js ISR, Kubernetes on DigitalOcean, Cloudflare (WAF, Tunnels), Axiom"
-    - "[Blog post](/blogs/election-monitor-system-netranews/) · [Project details](/projects/election-monitor-netranews/)"
+    - "[Blog post](/blogs/election-monitor-system-netranews/)"
 
 - title: "Research Assistant"
   dates: "November 2025 - February 2026"

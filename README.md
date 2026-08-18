@@ -6,9 +6,10 @@ Mehedi Khan's portfolio and blog.
 - `mehedikhan.me` — portfolio (news, education, work, research, achievements, skills, projects, ECA)
 - `mehedikhan.me/blogs` — blog
 
-Content lives in `_data/*.yml` (news, education, work experience, skills, ECA) and three collections:
-`_research/`, `_projects/`, `_achievements/`. Each collection entry gets its own detail page; the
-front page renders a short blurb + link. Blog posts are Markdown files in `_posts/`.
+Everything is one page — content lives entirely in `_data/*.yml` (news, education, work experience,
+research, achievements, skills, projects, ECA), each rendered through `_includes/entry-row.html` or
+`_includes/role-block.html`. No per-item detail pages; each entry is a self-contained blurb with
+external links (blog post, code, live site, design doc). Blog posts are Markdown files in `_posts/`.
 
 ## Local development
 

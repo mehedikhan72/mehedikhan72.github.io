@@ -137,12 +137,14 @@ span.highlight { background-color: $highlight; }
       }
     }
   }
-}
 
-.mentoring {
-  margin-top: 26px;
+  &.mentoring {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
 
-  h3 { display: block; margin-bottom: 8px; }
+    > div { margin-top: 6px; }
+  }
 }
 
 // ---- Entry row (research / projects / achievements) ----
@@ -160,7 +162,11 @@ span.highlight { background-color: $highlight; }
 
     img {
       width: 100%;
-      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background: #f7f7f7;
+      border: 1px solid #eee;
+      border-radius: 4px;
       display: block;
     }
   }
@@ -193,8 +199,6 @@ span.highlight { background-color: $highlight; }
   &__items { flex: 1 1 auto; color: $muted; }
 }
 
-.skills-intro { margin-bottom: 16px; color: $muted; }
-
 // ---- Footer ----
 .site-footer {
   max-width: $max-width;
@@ -215,39 +219,6 @@ span.highlight { background-color: $highlight; }
   }
 
   .credit { margin-top: 6px; }
-}
-
-// ---- Detail pages ----
-.detail-header {
-  margin-bottom: 24px;
-
-  h1 { text-align: left; font-size: 28px; }
-  .detail-meta { color: $muted; margin: 6px 0 10px; }
-  .back-link { display: inline-block; margin-bottom: 18px; }
-}
-
-.detail-body {
-  h3 {
-    display: block;
-    margin: 26px 0 8px;
-    color: $role;
-  }
-  p { margin-bottom: 14px; }
-  ul, ol { margin: 0 0 14px 20px; list-style: disc; }
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 10px 0;
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
-  }
 }
 
 // ---- Blog index ----
@@ -300,7 +271,15 @@ span.highlight { background-color: $highlight; }
   &__thumb {
     flex: 0 0 25%;
     max-width: 25%;
-    img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background: #f7f7f7;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      display: block;
+    }
   }
 
   &__body { flex: 1 1 auto; }
