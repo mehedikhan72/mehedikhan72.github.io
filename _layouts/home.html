@@ -44,7 +44,11 @@ layout: default
 
 <div class="section" id="research">
   <h2>Research</h2>
-  <div>{{ site.data.research.bio | markdownify }}</div>
+  {% for item in site.data.research.items %}
+    {% include entry-row.html item=item %}
+  {% endfor %}
+  <p>{{ site.data.research.thesis | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  <p>{{ site.data.research.interests | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 </div>
 
 <div class="section" id="work-experience">

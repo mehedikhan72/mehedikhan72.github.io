@@ -1,4 +1,20 @@
-bio: >
-  My research interests are in Systems, Large Language Models and Applied AI — most recently
-  multi-agent approaches to geo-spatial reasoning, and real-time multimodal sensor fusion (see the
-  [IEEE ICIP 2025 VIP Cup](/#achievements) win under Achievements).
+items:
+  - title: "Real-Time Multimodal Drone Detection, Tracking and Payload Classification"
+    meta: "Mehedi Khan, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib, Ruwad Naswan · IEEE ICIP 2025 VIP Cup — Champions · 2025"
+    image: /assets/img/ieeevipcup2025champions.webp
+    links:
+      - label: "Competition"
+        url: https://2025.ieeeicip.org/ieee-sps-video-and-image-processing-cup/
+    blurb: >
+      Team NeuronX won the IEEE ICIP 2025 VIP Cup among 40+ international teams, building fusion
+      pipelines for real-time multimodal (RGB + infrared) drone detection, tracking and payload
+      classification under fog, occlusion and thermal-contrast gaps. Supervised by Prof. Dr.
+      Shamsuzzoha Bayzid, with graduate tutor Asib Rahman.
+
+thesis: >
+  My undergraduate thesis explores citation faithfulness in LLMs, using reinforcement learning and
+  inference-time methods — rather than further training — to make models more faithful to their
+  cited sources while keeping compute costs down.
+
+interests: >
+  Beyond that, my research interests lie in ML systems and distributed systems.
