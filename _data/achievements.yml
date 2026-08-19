@@ -7,6 +7,8 @@
   links:
     - label: "Competition"
       url: https://2025.ieeeicip.org/ieee-sps-video-and-image-processing-cup/
+    - label: "Paper"
+      url: /assets/pdf/Infrared-Visual-Fusion-Vip-Cup-2025.pdf
   blurb: >
     Team NeuronX - me, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib and Ruwad Naswan - won
     the IEEE ICIP 2025 VIP Cup among 40+ international teams, building fusion pipelines for real-time
