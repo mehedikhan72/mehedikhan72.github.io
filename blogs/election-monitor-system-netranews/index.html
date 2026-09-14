@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.ico">
+
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Building a live election monitoring system for Netra News | Mehedi Khan</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Building a live election monitoring system for Netra News" />
+<meta name="author" content="Mehedi Khan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In February 2026, I worked with Netra News to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large." />
+<meta name="twitter:description" property="og:description" content="In February 2026, I worked with Netra News to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large." />
+<link rel="canonical" href="https://mehedikhan.me/blogs/election-monitor-system-netranews/" />
+<meta property="og:url" content="https://mehedikhan.me/blogs/election-monitor-system-netranews/" />
+<meta property="og:site_name" content="Mehedi Khan" />
+<meta property="og:image" content="https://mehedikhan.me/assets/blog/election-monitor-system-netranews-3.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-03-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-03-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://mehedikhan.me/assets/blog/election-monitor-system-netranews-3.webp" />
+<meta name="twitter:title" content="Building a live election monitoring system for Netra News" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Mehedi Khan"},"dateModified":"2026-03-11T00:00:00+00:00","datePublished":"2026-03-11T00:00:00+00:00","description":"In February 2026, I worked with Netra News to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large.","headline":"Building a live election monitoring system for Netra News","image":"https://mehedikhan.me/assets/blog/election-monitor-system-netranews-3.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://mehedikhan.me/blogs/election-monitor-system-netranews/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mehedikhan.me/assets/img/og-image.png"},"name":"Mehedi Khan"},"url":"https://mehedikhan.me/blogs/election-monitor-system-netranews/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link type="application/atom+xml" rel="alternate" href="https://mehedikhan.me/feed.xml" title="Mehedi Khan" />
+
+</head>
+<body>
+<div class="page">
+<a class="back-link" href="/blogs/">&larr; Back to all articles</a>
+
+<div class="post-header">
+  <h1>Building a live election monitoring system for Netra News</h1>
+  <div class="post-meta">
+    March 11, 2026 · Technical
+  </div>
+</div>
+
+<div class="post-body">
+<p><em>[0% AI use for this article - not even revisions. Let’s take back control where it matters the most - creative fields]</em></p>
+
+<p>How would you design a software system where the max potential load is roughly 75 million -130 million (estimated internet users in Bangladesh) users in the span of a few hours, and downtime was unaffordable?</p>
+
+<p>Last month, in February 2026, I worked with <a href="https://www.netra.news">Netra News</a> to develop a live election monitoring system targeting the national election of Bangladesh. I worked as a systems, backend, and infra lead for the project. We successfully pulled it off. In the span of a few hours, our system reliably served roughly 8 million requests(client + server) with 100% uptime, with a small cost, for a project this large.</p>
+
+<p><img src="/assets/blog/election-monitor-system-netranews-1.webp" alt="Netra News Election Monitoring System" /></p>
+
+<p>In this article, I’ll write about the system architecture, design choices, infra setup and decisions, what worked and what did not, how it was working with a new team, that too, in a new domain - journalism, which I wasn’t familiar with.</p>
+
+<p><strong>System Introduction</strong></p>
+
+<p>Let’s take a minute to understand the system and its functional requirements first. There are 300 constituencies where candidates from different parties contest each other in the national parliamentary election of Bangladesh. These 300 constituencies have a total of roughly 43000 polling stations nationwide. Once every polling station’s voting result for a constituency is published, the candidate with the most votes wins. The party with the most winning candidates wins the election, with some caveats - irrelevant to the scope of this article.</p>
+
+<p><a href="https://www.netra.news">Netra News</a> provided the logistical support for this. They had reporters country-wide, who would inform the Dhaka office once results from a polling station were available. In the Dhaka office, there were about 200 enumerators who were strategically connected with those reporters via WhatsApp groups. The enumerator’s job was to enter the vote results in our system, which would be visible to the public. Besides, we had features like live blogs, comparisons, map-based UI, etc.</p>
+
+<p>Three major non-functional requirements were scalability, zero downtime, and protection against cyber attacks, especially DDoS attacks.</p>
+
+<p><strong>Architecture</strong></p>
+
+<p>You can already guess this was a huge read-heavy system. And there wasn’t much interaction to have for the public viewers - it was mostly static content. Considering everything, I went with a static site approach. Dynamic rendering, even with a cluster of caches, would not have been feasible in a limited infrastructure setup for millions of active users.</p>
+
+<p>So the plan was that the moment an enumerator would input some result in the system, the server would update the static site’s content via an authenticated and non-blocking web hook. Thus, the static site would always be up-to-date and barely show any stale data. Turns out NextJS has built-in support for our use case - Incremental Static Regeneration (ISR).</p>
+
+<p>For the backend, I religiously followed the KISS principle. One FastAPI monolith server(with replicas) and one PostgreSQL instance. Followed the controller-service pattern for the APIs and used Alembic for database migration. I had a Postgres replica standby to ensure 99.99% uptime. Applied a two-step connection pooling for the database - one in the application layer and one in the infrastructure layer using pgBouncer. I had to make sure that the maximum concurrent connections from all the running replicas did not exceed the connection limit of the database instance.</p>
+
+<p>We needed storage for the uploaded result documents and images. I used an S3-compatible managed storage for the job. It was guaranteed that the uploaded file size would not exceed a threshold, so a presigned URL wasn’t needed for uploading the images. Don’t over-engineer anything, folks! Upon file uploading, compression and auto-conversion to WebP were ensured.</p>
+
+<p>For the admins and enumerators, a role-based access system(RBAC) was implemented.</p>
+
+<p>For observability, I implemented a logging middleware and integrated Axiom with it, which let me observe logs in real-time in production.</p>
+
+<p><img src="/assets/blog/election-monitor-system-netranews-2.webp" alt="Netra News Election Monitoring System - Load" /></p>
+
+<p><strong>Infrastructure</strong></p>
+
+<p>All our cloud services were deployed in DigitalOcean, in the Bangalore(BLR1) region. For state-of-the-art horizontal auto-scaling, I used a managed Kubernetes cluster with 2-6 (min-max) nodes - each having 4vCPUs, 8GBs of RAM. It came in handy later for other tasks as well. The backend was managed by an HPA, keeping the pod count between 5 and 15. When a pod’s CPU usage exceeded 60%, a new pod was booted up. CPU usage was the ideal metric here since our application was compute-heavy. The database instances contained 2vCPUs and 8 GB of RAM, with 30 GB of storage.</p>
+
+<p>The application was containerized using Docker, and DigitalOcean was used as the container registry.</p>
+
+<p>I used Cloudflare for its security features: automatic DDoS protection, WAF rules, rate limiting, bot protection, and TLS termination. These features ensured our system’s reliability during the election. Later, we found out that Cloudflare successfully prevented a few scraping attempts for our APIs.</p>
+
+<p>Initially, I planned on having a managed load balancer so communication could be made with our Kubernetes cluster via Cloudflare. However, it turned out that DigitalOcean’s Kubernetes managed load balancer was incompatible with Cloudflare since there was no way to allow IPv6 IPs from Cloudflare’s IP ranges. Later, I discovered Cloudflare tunnels were more suited for the job. I ran three tunnel instances in the Kubernetes cluster and configured them in the Cloudflare dashboard. Bingo! Our backend was accessible via Cloudflare, and the best part about this was that everything was protected.</p>
+
+<p>The entire infrastructure was deployed for a month. We were billed around $335 only.</p>
+
+<p><strong>Automation</strong></p>
+
+<p>Netra’s journalists needed a place where they could see a snapshot of the election in one place. I implemented a cronjob-based automation where a few scripts would populate an Excel sheet every 15 minutes, containing all the highlights of the election. The journalists could then review it and make blogs, talk about it on talk shows, etc. I put the cron jobs inside the same Kubernetes cluster.</p>
+
+<p><strong>Miscellaneous</strong></p>
+
+<p>Reliability of the application was guaranteed with hundreds of automated end-to-end tests. I used GitHub Actions for continuous integration and continuous delivery(CI-CD), which made the development phase much simpler.</p>
+
+<p>Kubernetes Secret was used for managing environment variables in production.</p>
+
+<p>We had two frontends. A public-facing one and a private-facing one - for the enumerators and admins. The frontend and ISR implementation was done in NextJS and deployed in Vercel’s Pro plan - developed and maintained mostly by <a href="https://www.linkedin.com/in/trulynoirit/">Mashukur Rahman</a>. We invested a lot in the UI and UX of the system, which was done mostly by <a href="https://arnabfouzder.webflow.io/">Arnab Fouzder</a>.</p>
+
+<p>From Netra’s side, we were mostly involved with <a href="https://en.wikipedia.org/wiki/Tasneem_Khalil">Tasneem Khalil</a> and <a href="https://nazmulahasan.com/">Nazmul Ahasan</a> - two amazing individuals and journalists. It was amazing working with such a team.</p>
+
+<p><img src="/assets/blog/election-monitor-system-netranews-3.webp" alt="Netra News Election Monitoring System - Team" /></p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>I learned a ton from this project. Working under stress, not over-engineering things, understanding proper client needs, and delivering accordingly - the list could go on.</p>
+
+<p>Last but not least, it’s always rewarding to take on mission-critical engineering projects, meet and work with amazing new teams, and most importantly, to live at your edge.</p>
+
+</div>
+
+<div class="share-row" id="share-row" data-title="Building a live election monitoring system for Netra News">
+  <span class="share-label">Share</span>
+  <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://mehedikhan.me/blogs/election-monitor-system-netranews/" target="_blank" rel="noopener" aria-label="Share on Facebook">
+    <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+  </a>
+  <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://mehedikhan.me/blogs/election-monitor-system-netranews/&amp;text=Building+a+live+election+monitoring+system+for+Netra+News" target="_blank" rel="noopener" aria-label="Share on X">
+    <svg viewBox="0 0 24 24"><path d="M18.24 2H21l-6.5 7.43L22.2 22h-6.1l-4.78-6.25L5.8 22H3l6.96-7.95L2 2h6.25l4.32 5.72L18.24 2zm-1.07 18h1.68L7.9 3.9H6.1L17.17 20z"/></svg>
+  </a>
+  <button type="button" id="copy-link-btn" aria-label="Copy link">
+    <svg viewBox="0 0 24 24"><path d="M3.9 12a4.1 4.1 0 0 1 4.1-4.1h4v-1.8h-4a5.9 5.9 0 0 0 0 11.8h4v-1.8h-4A4.1 4.1 0 0 1 3.9 12zM16 6.1h-4v1.8h4a4.1 4.1 0 0 1 0 8.2h-4v1.8h4a5.9 5.9 0 0 0 0-11.8zM8 12.9h8v-1.8H8v1.8z"/></svg>
+  </button>
+  <span class="toast" id="copy-toast">Link copied</span>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-link-btn');
+  var toast = document.getElementById('copy-toast');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      toast.classList.add('visible');
+      setTimeout(function () { toast.classList.remove('visible'); }, 1800);
+    });
+  });
+})();
+</script>
+
+</div>
+<footer class="site-footer">
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/mehedikhan72/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+    </a>
+    <a href="https://github.com/mehedikhan72" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/mehed1khan/" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/mehed1khan/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.73 3.73 0 0 1-1.38-.9 3.73 3.73 0 0 1-.9-1.38c-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0-2.16C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.39A5.9 5.9 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.12a5.9 5.9 0 0 0 2.12 1.39c.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.39 5.9 5.9 0 0 0 1.39-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.39-2.12A5.9 5.9 0 0 0 19.81.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+    </a>
+  </div>
+  <div class="copyright">&copy; 2026 Mehedi Khan. All rights reserved.</div>
+  <div class="credit">Thanks to <a href="https://leonidk.com/" target="_blank" rel="noopener">Leonid</a> for implementing <a href="https://jonbarron.info" target="_blank" rel="noopener">Jon</a>'s design in <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>.</div>
+</footer>
+
+</body>
+</html>
