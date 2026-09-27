@@ -1,4 +1,17 @@
 items:
+  - title: "Attributable Post-Rationalization in RAG Citations: A Controlled Reproduction and an RLVR Comparison"
+    meta: "Mehedi Khan, Md. Shariful Islam Bhuyan · arXiv preprint · 2026"
+    image: /assets/img/research2-citation-faithfulness.webp
+    links:
+      - label: "Paper"
+        url: https://arxiv.org/abs/2609.23053
+    blurb: >
+      RAG systems can give the right answer while citing a source they never used - a failure
+      called post-rationalization. With Md. Shariful Islam Bhuyan, I added a missing control to an
+      existing methodology for measuring this, then used it to test whether training search agents
+      with RLVR makes citations more honest. It doesn't: across four QA datasets, RLVR-trained
+      agents post-rationalized at close to the base model's rate.
+
   - title: "Real-Time Multimodal Drone Detection, Tracking and Payload Classification"
     meta: "Mehedi Khan, Abrar Zahin Raihan, Sadik Mahmud Shakshor, Sadman Sakib, Ruwad Naswan · IEEE ICIP 2025 VIP Cup - Champions · 2025"
     image: /assets/img/research1-rgb-ir.webp
