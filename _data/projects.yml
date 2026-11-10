@@ -1,4 +1,27 @@
 # Newest first.
+- title: "QuizCube RAG System"
+  context: "Client Project (proprietary)"
+  year: 2026
+  image: /assets/img/quizcube-rag-pipeline.svg
+  meta: "Client project · 2026"
+  blurb: >
+    A production RAG backend for an ed-tech platform covering Bangladesh's NCTB higher-secondary
+    curriculum (Physics, Chemistry, Math, Biology). Three idempotent Celery pipelines share one
+    corpus: one OCRs textbooks, chunks them, classifies them against a 1,075-topic taxonomy and
+    embeds them into Qdrant; a second retrieves grounding chunks and generates new bilingual
+    (Bangla/English) MCQs, with figures the model draws as sanitized SVG; a third ingests scanned
+    past papers end to end - extraction, Bangla-aware answer-key binding, retrieval-grounded answer
+    resolution, and bilingual explanations. Every MCQ from either path clears a semantic-dedup check
+    and a cross-model LLM judge before it's stored; on a 96-MCQ benchmark, 90/96 came out usable at
+    a judge mean of 8.2/10, for about $0.02 per usable question. Built a provider-agnostic LLM layer
+    (OpenAI/Anthropic) that treats model output as untrusted input - structured-output schemas,
+    per-field validators and graceful degradation at every layer - plus Celery delivery guarantees
+    (acks_late, reject_on_worker_lost) so a crashed worker never loses or duplicates a job. Stack:
+    FastAPI, Celery, PostgreSQL, Qdrant, Docker, DigitalOcean behind Caddy TLS. Thorough unit and
+    e2e test coverage, with GitHub Actions CI (lint, e2e against live APIs, migration-drift check,
+    dependency audit) and automatic deploy on every passing push. Proprietary client work - code
+    isn't shareable.
+
 - title: "Live Election Monitoring System"
   context: "Netra News"
   year: 2026

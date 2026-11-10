@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Lato, Verdana, Helvetica, sans-serif">
+  <rect width="800" height="600" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <!-- Column 1 -->
+  <g font-size="20" fill="#222">
+    <rect x="60" y="40" width="330" height="60" rx="6" fill="#fff" stroke="#bbb" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="225" y="66" text-anchor="middle">Textbook Corpus</text>
+    <text x="225" y="86" text-anchor="middle" font-size="14" fill="#666">Qdrant content collection</text>
+
+    <rect x="60" y="150" width="330" height="60" rx="6" fill="#fff" stroke="#1772d0" stroke-width="2"/>
+    <text x="225" y="186" text-anchor="middle">Retrieve Grounding Chunks</text>
+
+    <rect x="60" y="260" width="330" height="70" rx="6" fill="#fff" stroke="#1772d0" stroke-width="2"/>
+    <text x="225" y="288" text-anchor="middle">Generate Bilingual MCQ</text>
+    <text x="225" y="310" text-anchor="middle" font-size="14" fill="#666">+ SVG figures, exclude-list guard</text>
+
+    <rect x="60" y="390" width="330" height="60" rx="6" fill="#fff" stroke="#1772d0" stroke-width="2"/>
+    <text x="225" y="416" text-anchor="middle">Semantic Dedup Check</text>
+    <text x="225" y="436" text-anchor="middle" font-size="14" fill="#666">cosine similarity vs MCQ bank</text>
+  </g>
+
+  <!-- vertical arrows column 1 -->
+  <g stroke="#888" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="225" y1="100" x2="225" y2="146"/>
+    <line x1="225" y1="210" x2="225" y2="256"/>
+    <line x1="225" y1="330" x2="225" y2="386"/>
+  </g>
+
+  <!-- connector from column1 bottom to column2 top -->
+  <path d="M390 420 H 520 V 100" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Column 2 -->
+  <g font-size="20" fill="#222">
+    <rect x="410" y="40" width="330" height="70" rx="6" fill="#fff" stroke="#1772d0" stroke-width="2"/>
+    <text x="575" y="68" text-anchor="middle">LLM Judge</text>
+    <text x="575" y="90" text-anchor="middle" font-size="14" fill="#666">independent model family · weighted score</text>
+  </g>
+
+  <!-- branch arrows -->
+  <path d="M575 110 L485 150" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M575 110 L665 150" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g font-size="17" fill="#fff">
+    <rect x="410" y="150" width="150" height="60" rx="6" fill="#1772d0" stroke="#1772d0" stroke-width="2"/>
+    <text x="485" y="176" text-anchor="middle">Store</text>
+    <text x="485" y="196" text-anchor="middle" font-size="13">usable MCQ</text>
+  </g>
+
+  <g font-size="17" fill="#666">
+    <rect x="590" y="150" width="150" height="60" rx="6" fill="#fff" stroke="#bbb" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="665" y="176" text-anchor="middle">Flag</text>
+    <text x="665" y="196" text-anchor="middle" font-size="13">for human review</text>
+  </g>
+
+  <line x1="485" y1="210" x2="485" y2="256" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g font-size="15" fill="#444">
+    <rect x="410" y="260" width="330" height="100" rx="6" fill="#fff" stroke="#bbb" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="575" y="288" text-anchor="middle" font-weight="bold" font-size="16">96-MCQ benchmark run</text>
+    <text x="575" y="312" text-anchor="middle">90/96 usable · judge mean 8.2/10</text>
+    <text x="575" y="334" text-anchor="middle">≈ $0.022 per usable MCQ</text>
+  </g>
+</svg>
