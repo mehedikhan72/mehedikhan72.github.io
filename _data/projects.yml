@@ -1,9 +1,9 @@
 # Newest first.
 - title: "QuizCube RAG System"
-  context: "Client Project (proprietary)"
+  context: "Software Consultancy (proprietary)"
   year: 2026
   image: /assets/img/quizcube-rag-pipeline.svg
-  meta: "Client project · 2026"
+  meta: "Software consultancy · 2026"
   blurb: >
     A production RAG backend for an ed-tech platform covering Bangladesh's NCTB higher-secondary
     curriculum (Physics, Chemistry, Math, Biology). Three idempotent Celery pipelines share one
@@ -19,8 +19,8 @@
     (acks_late, reject_on_worker_lost) so a crashed worker never loses or duplicates a job. Stack:
     FastAPI, Celery, PostgreSQL, Qdrant, Docker, DigitalOcean behind Caddy TLS. Thorough unit and
     e2e test coverage, with GitHub Actions CI (lint, e2e against live APIs, migration-drift check,
-    dependency audit) and automatic deploy on every passing push. Proprietary client work - code
-    isn't shareable.
+    dependency audit) and automatic deploy on every passing push. Built through my software
+    consultancy work - proprietary, so code isn't shareable.
 
 - title: "Live Election Monitoring System"
   context: "Netra News"
